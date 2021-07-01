@@ -13,39 +13,51 @@
 
 <body>
     <nav>
-        <a href="./index.html"><img src="./img/logo.png" alt="logo"></a>
+        <a href="../index.html"><img src="../img/logo.png" alt="logo"></a>
         <ul>
             <li><a href="./index.html">Inicio</a></li>
-            <li><a href="./pages/nosotros.html">Nosotros</a></li>
-            <li><a href="./pages/galeria.html">Galeria</a></li>
-            <li><a href="./pages/tienda.html">Tienda</a></li>
-            <li><a href="./pages/contacto.html">Contacto</a></li>
+            <li><a href="./nosotros.html">Nosotros</a></li>
+            <li><a href="./galeria.html">Galeria</a></li>
+            <li><a href="./tienda.html">Tienda</a></li>
+            <li><a href="./contacto.html">Contacto</a></li>
         </ul>
     </nav>
+
     <div>
-        <h1>titulo principal</h1>
-        <img src="./img/foto1.jpg" alt="Fondo" height="600px">
+        <table border="1">
+            <tr>
+                <td>
+                    <form action="" style="display: inline;">
+                        <legend>Informacion de Contacto</legend>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" placeholder="Ingrese su nombre"><br>
+                        <label for="telefono">Telefono</label>
+                        <input type="tel" placeholder="Ingrese su Telefono"><br>
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Ingrese su email"><br>
+
+                        <label for="tipoconsulta">Cual es el Motivo de su consulta</label>
+                        <select name="tipoconsulta" id="">
+                            <option value="c">Consultas</option>
+                            <option value="q">Quejas</option>
+                        </select><br>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea name="mensaje" id="" cols="20" rows="10" placeholder="Deja tu mensaje"></textarea><br>
+                        <label for="news">¿Desea suscribirse al Newsletter</label>
+                        <input type="checkbox" name="news" value="news"><br>
+                        <input type="reset" value="Limpiar Formulario">
+                        <input type="submit" value="Enviar">
+                    </form>
+                </td>
+                <td>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d819.400662973438!2d-58.400966671376054!3d-34.765600942145056!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sar!4v1625099352968!5m2!1sen!2sar"
+                        width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </td>
+            </tr>
+        </table>
+
     </div>
-    <section>
-        <article>
-            <img src="" alt="">
-            <h2>titulo imagen</h2>
-            <p>texto</p>
-            <button>ir a otra pantalla</button>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h2>titulo imagen</h2>
-            <p>texto</p>
-            <button>ir a otra pantalla</button>
-        </article>
-        <article>
-            <img src="" alt="">
-            <h2>titulo imagen</h2>
-            <p>texto</p>
-            <button>ir a otra pantalla</button>
-        </article>
-    </section>
     <footer>
         <div>
             <a href="#"><img
