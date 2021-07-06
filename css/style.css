@@ -14,7 +14,7 @@ body{
     margin-right: auto;
 }
 
-header img{
+.logo{
     width: 10vw;
     margin-left: 1vw;
 }
@@ -55,4 +55,9 @@ table h3{
 
 p{
     color: darkslateblue;
+}
+
+ul.ingredientes{
+    color: red;
+    list-style-type:'\1F370' ;
 }
