@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+@font-face {
+    font-family: samantha;
+    src: url('../font/samantha.ttf') format('truetype');
+}
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header img{
+    width: 10vw;
+    margin-left: 1vw;
+}
+
+
+nav ul{
+    display: inline;
+    right: 2vw;
+    top: 20%;
+    list-style: none; 
+}
+
+nav ul li {
+    display: inline;
+    padding: 1vw;
+}
+
+nav ul li a{
+    font-family: 'samantha';
+    font-weight: 600;
+    font-size: 1vw;
+    text-decoration-line: none;
+    padding-right: 1vw;
+    color:chocolate;
+    margin-bottom: 50%;     
+}
+
+video{
+    height: 25vh;
+}
+
+h2 {
+    color:darkred;
+}
+table h3{
+    color:darkkhaki
+}
+
+p{
+    color: darkslateblue;
+}
