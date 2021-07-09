@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @font-face {
     font-family: samantha;
     src: url('../font/samantha.ttf') format('truetype');
@@ -7,11 +8,18 @@
 
 *{
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
+
 body{
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
+    background-image: url('../img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .logo{
@@ -57,7 +65,17 @@ p{
     color: darkslateblue;
 }
 
-ul.ingredientes{
+.ingredientesTortas{
     color: red;
     list-style-type:'\1F370' ;
+    padding-left: 30px;
+}
+
+.indexImg{
+    height: 200px;
+}
+
+.fondoCeleste{
+    background-color: rgba(215,244,243, 0.4);
+    
 }
