@@ -79,3 +79,9 @@ p{
     background-color: rgba(215,244,243, 0.4);
     
 }
+
+.fab{
+    color: black;
+    font-size: 3rem;
+    letter-spacing: 1rem;
+}
