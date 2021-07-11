@@ -4,51 +4,132 @@
     font-family: samantha;
     src: url('../font/samantha.ttf') format('truetype');
 }
-/*prueba*/
+
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
+    font-size: 16px;
 }
+
+
+/*CSS logo y navegacion*/
+.logo{
+    width: 250px;
+    padding: 1rem;
+    margin-left: 5rem;
+}
+nav ul{
+    display: inline;
+    list-style: none; 
+}
+nav ul li {
+    display: inline;
+    padding: 1vw;
+}
+nav ul li a{
+    font-family: 'samantha';
+    font-weight: 600;
+    font-size: 1.5rem;
+    text-decoration-line: none;
+    padding-right: 0.5rem;
+    color:chocolate;
+}
+
+
+/*CSS HEADER, es el mismo para todas las apginas*/
+header nav{  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a{
+    font-size: 1rem;
+}
+
+
+/*CSS FOOTER, es el mismo para todas las apginas*/
+
+footer .grillaFooter{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+footer .logo{
+    width: 200px;
+    padding: 0;
+    margin: 0;
+}
+footer #logo{
+    grid-column: 1/4;
+    text-align: center;
+ }
+footer div #redes{
+    text-align:center;
+}
+footer div #redes i{
+color: rgb(87, 87, 87);
+font-size: 2.5rem;
+padding-left: 1.5rem;
+padding-right: 1.5rem;
+}
+footer nav{
+    grid-column: 1/4;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+ }
+ footer #contacto p{
+    margin-left: 2rem;
+    font-family: "Butterfly kids";
+    font-size: 1.5rem;
+}
+footer #frase{
+    text-align: center;
+    margin: auto;
+}
+footer #frase p{
+    font-family: "Butterfly kids";   
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+
+.creditos{
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+.creditosFlex{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.creditosFlex a{
+        text-decoration-line: none;
+        color: black;
+}
+
+.typ{
+    display: inline;
+}
+
+
+/*CSS xxxxxxxxxxxxxx, */
+
 
 body{
     width: 95vw;
     margin-left: auto;
     margin-right: auto;
-    background-image: url('../img/fondo.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
-.logo{
-    width: 10vw;
-    margin-left: 1vw;
-}
-
-
-nav ul{
-    display: inline;
-    right: 2vw;
-    top: 20%;
-    list-style: none; 
-}
-
-nav ul li {
-    display: inline;
-    padding: 1vw;
-}
-
-nav ul li a{
-    font-family: 'samantha';
-    font-weight: 600;
-    font-size: 1vw;
-    text-decoration-line: none;
-    padding-right: 1vw;
-    color:chocolate;
-    margin-bottom: 50%;     
-}
 
 video{
     height: 25vh;
@@ -80,8 +161,21 @@ p{
     
 }
 
-.fab{
-    color: black;
-    font-size: 3rem;
-    letter-spacing: 1rem;
+
+.gridContainer{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2rem;
+  row-gap: 1rem;
+  padding: 0 3rem
+    
+}
+
+.gridContainer div{
+    border: 1px solid black;
+    text-align: center; 
+}
+
+.titloTienda{
+    grid-column: 1/4;
 }
