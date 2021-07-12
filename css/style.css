@@ -22,12 +22,13 @@
     margin-left: 5rem;
 }
 nav ul{
-    display: inline;
     list-style: none; 
 }
+
 nav ul li {
-    display: inline;
+    display: inline-block;
     padding: 1vw;
+    position: relative;
 }
 nav ul li a{
     font-family: 'samantha';
@@ -38,6 +39,24 @@ nav ul li a{
     color:chocolate;
 }
 
+ul ul{
+    position: absolute;
+    display: none;
+}
+
+ul ul li{
+display: block;
+padding-top: 0;
+padding-bottom: 0;
+}
+
+.subMenu li a{
+font-size: 0.75rem;
+}
+
+ul li:hover ul{
+display: block;
+}
 
 /*CSS HEADER, es el mismo para todas las apginas*/
 header nav{  
