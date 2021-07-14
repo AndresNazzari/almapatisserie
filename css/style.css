@@ -115,25 +115,24 @@ footer #frase p{
     margin-bottom: 2rem;
 }
 
-
 .creditos{
     padding-left: 3rem;
     padding-right: 3rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
-    
+    padding-bottom: 2rem;  
+    background-color: rgba(128, 128, 128, 0.582);
 }
 .creditosFlex{
     display: flex;
     justify-content: space-between;
-
 }
-
-.creditosFlex a{
+.creditosFlex p, .creditosFlex i, .creditosFlex a {
         text-decoration-line: none;
-        color: black;
+        color: rgb(73, 73, 73);
 }
-
+.creditosFlex i:hover {
+    color: black;
+}
 .typ{
     display: inline;
 }
@@ -141,13 +140,6 @@ footer #frase p{
 
 /*CSS xxxxxxxxxxxxxx, */
 
-
-body{
-    width: 95vw;
-    margin-left: auto;
-    margin-right: auto;
-
-}
 
 
 video{
@@ -187,7 +179,6 @@ p{
   column-gap: 2rem;
   row-gap: 1rem;
   padding: 0 3rem
-    
 }
 
 .gridContainer div{
@@ -197,4 +188,7 @@ p{
 
 .titloTienda{
     grid-column: 1/4;
+}
+.tarjetaTienda img{
+    width: 200px; ;
 }
