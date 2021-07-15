@@ -5,13 +5,19 @@
     src: url('../font/samantha.ttf') format('truetype');
 }
 
-
+/*CSS GENERAL*/
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
+}
+
+.centrado{
+        margin: 0 auto;
+        padding: 0 1em;
+        max-width: 90vw;
 }
 
 
@@ -24,11 +30,10 @@
 nav ul{
     list-style: none; 
 }
-
 nav ul li {
     display: inline-block;
-    padding: 1vw;
-    position: relative;
+    padding: 1rem;
+    /*position: relative;*/
 }
 nav ul li a{
     font-family: 'samantha';
@@ -36,10 +41,10 @@ nav ul li a{
     font-size: 1.5rem;
     text-decoration-line: none;
     padding-right: 0.5rem;
-    color:chocolate;
+    color:rgba(193,125,5,255);
 }
 
-ul ul{
+/*ul ul{
     position: absolute;
     display: none;
 }
@@ -57,8 +62,9 @@ font-size: 0.75rem;
 ul li:hover ul{
 display: block;
 }
+*/
 
-/*CSS HEADER, es el mismo para todas las apginas*/
+/*CSS HEADER, es el mismo para todas las paginas*/
 header nav{  
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -69,9 +75,10 @@ nav ul li a{
     font-size: 1rem;
 }
 
-
-/*CSS FOOTER, es el mismo para todas las apginas*/
-
+/*CSS FOOTER, es el mismo para todas las paginas*/
+footer{
+    margin-top: 10vh;
+}
 footer .grillaFooter{
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -94,6 +101,7 @@ font-size: 2.5rem;
 padding-left: 1.5rem;
 padding-right: 1.5rem;
 }
+
 footer nav{
     grid-column: 1/4;
     text-align: center;
@@ -137,58 +145,129 @@ footer #frase p{
     display: inline;
 }
 
-
-/*CSS xxxxxxxxxxxxxx, */
-
-
-
-video{
-    height: 25vh;
+/*CSS ESPECIFICO DE INDEX*/
+.heroeIndex{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(http://placekitten.com/1920/1920) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 3vh;
 }
 
-h2 {
-    color:darkred;
-}
-table h3{
-    color:darkkhaki
-}
-
-p{
-    color: darkslateblue;
+.tituloIndex{
+    font-family: "samantha";
+    font-size: 4rem;
+    color: rgba(193,125,5,255);
+    padding: 2rem;
+    background:rgba(105, 105, 105, 0.3);
 }
 
-.ingredientesTortas{
-    color: red;
-    list-style-type:'\1F370' ;
-    padding-left: 30px;
+.flexMain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
 }
 
-.indexImg{
-    height: 200px;
+.flexMain article{
+    width: 49%;
+    height: 40vh;
+    margin-bottom: 2%;
+    background-color: rgba(255, 0, 0, 0.308);
+    overflow: hidden;
+
+}
+    .flexMain article:nth-child(3n) { /* para cada 3*n elementos article dentro de la clase flex index le aplica esto*/
+    width: 100%;
+    height: 65vh;
+    }
+
+    .indexImg{
+    width: 100%;
+    }
+
+/*CSS ESPECIFICO DE TIENDA*/
+.heroeTienda{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(http://placekitten.com/1920/1920) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-bottom: 3vh;
 }
 
-.fondoCeleste{
-    background-color: rgba(215,244,243, 0.4);
-    
+.tituloTienda{
+    font-family: "samantha";
+    font-size: 4rem;
+    color: rgba(193,125,5,255);
+    padding: 2rem;
+    background:rgba(105, 105, 105, 0.3);
 }
 
-
-.gridContainer{
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  column-gap: 2rem;
-  row-gap: 1rem;
-  padding: 0 3rem
+.tarjetas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
 }
 
-.gridContainer div{
-    border: 1px solid black;
-    text-align: center; 
+.tarjeta{
+  max-width: 25vw;
+  flex: 0 0 25vw;
+  margin: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+  border-radius: 5px;
+  background: linear-gradient(180deg, rgba(219,241,232,0.5) 0%, rgba(255,255,255,1) 60%);
+} 
+
+.tarjeta h3{
+    margin: 1rem 0 1rem 0;
+    text-align: center;
 }
 
-.titloTienda{
-    grid-column: 1/4;
+.tarjeta p{
+    overflow: hidden;
 }
-.tarjetaTienda img{
-    width: 200px; ;
+
+.tarjeta img {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  border-radius: 5px
+}
+
+.tarjeta .contenido {
+    padding: 0 1rem 1rem;
+}
+
+.tarjeta .contenido input{
+  color: #fff;
+  width: 100%;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 1rem;
+  padding: 0.5rem 1.2rem;
+  background: #318aac;
+  position: relative;
+  border: 2px solid #318aac;
+  outline: 1px solid;
+  outline-color: rgba(49, 138, 172, 0.4);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+.tarjeta .contenido input:hover {
+  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+  outline-color: rgba(49, 138, 172, 0);
+  outline-offset: 80px;
+  text-shadow: 1px 1px 6px #fff;
 }
