@@ -144,7 +144,7 @@ footer #frase p{
 
 /*CSS ESPECIFICO DE INDEX*/
 .heroeIndex{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(http://placekitten.com/1920/1920) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/productos_tienda/smash.PNG") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -189,7 +189,7 @@ width: 100%;
 
 /*CSS ESPECIFICO DE TIENDA*/
 .heroeTienda{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(http://placekitten.com/1920/1920) ;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/productos_tienda/smash.PNG") ;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
