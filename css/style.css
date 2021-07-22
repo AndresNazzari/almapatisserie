@@ -6,6 +6,7 @@
     src: url('../font/samantha.ttf') format('truetype');
 }
 
+
 /*CSS GENERAL*/
 *{
     box-sizing: border-box;
@@ -26,14 +27,13 @@ li {
     /*max-width: 90vw;*/
 }
 
-.logo{
-    width: 250px;
+.navLogo{
+    width: 150px;
 }
 
 /*CSS logo y navegacion*/
-.navLogo{
-    width: 250px;
-}
+
+/*################          HEADER          #################*/
 .navBar{
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -41,26 +41,36 @@ li {
     align-items: center;
     justify-content: space-between;
 }
-
-.navMenu{
-    display: flex ;
-    align-items: center;
+.navMenu {
     justify-content: space-between;
+    margin-right: 3vw;
+    position: fixed;
+    left: -100%;
+    top: 11rem;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
 }
-
-.navItem{
-margin-right: 6rem;
+.navMenu.active {
+    left: 0;
 }
-
+.navItem {
+    margin: 2.5rem 0;
+}
 .navLink{
     font-family: 'samantha';
     font-weight: 600;
     font-size: 1.5rem;
     color:rgba(193,125,5,1);
 }
-
 .hamburger {
-    display: none;
+    display: block;
+    cursor: pointer;
+    margin-right: 5vw;
 }
 .bar {
     display: block;
@@ -70,6 +80,18 @@ margin-right: 6rem;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: rgba(193,125,5,1);
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+.hamburger.active .bar:nth-child(1) {
+    -webkit-transform: translateY(8px) rotate(45deg);
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active .bar:nth-child(3) {
+    -webkit-transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(-8px) rotate(-45deg);
 }
 
 /*CSS FOOTER, es el mismo para todas las paginas*/
@@ -91,12 +113,13 @@ footer #logo{
  }
 footer div #redes{
     text-align:center;
+    grid-column: 1/4;
 }
 footer div #redes i{
 color: rgb(87, 87, 87);
 font-size: 2.5rem;
-padding-left: 1.5rem;
-padding-right: 1.5rem;
+padding-left: 1vw;
+padding-right: 1vw;
 }
 
 footer nav{
@@ -129,7 +152,9 @@ footer #frase p{
 }
 .creditosFlex{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
+    align-items: center;
 }
 .creditosFlex p, .creditosFlex i, .creditosFlex a {
         text-decoration-line: none;
@@ -168,25 +193,22 @@ footer #frase p{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-
+    flex-direction: column;
+    align-items: center;
 }
 
 .flexMain article{
-    width: 49%;
+    width: 90%;
     height: 40vh;
     margin-bottom: 2%;
     background-color: rgba(255, 0, 0, 0.308);
     overflow: hidden;
 
 }
-.flexMain article:nth-child(3n) { /* para cada 3*n elementos article dentro de la clase flex index le aplica esto*/
-width: 100%;
-height: 65vh;
-}
+
 .indexImg{
 width: 100%;
 }
-
 /*CSS ESPECIFICO DE TIENDA*/
 .heroeTienda{
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url("../img/productos_tienda/smash.PNG") ;
@@ -200,7 +222,6 @@ width: 100%;
     align-items: center;    
     margin-bottom: 3vh;
 }
-
 .tituloTienda{
     font-family: "samantha";
     font-size: 4rem;
@@ -208,7 +229,6 @@ width: 100%;
     padding: 2rem;
     background:rgba(105, 105, 105, 0.3);
 }
-
 .tarjetas {
   display: flex;
   flex-wrap: wrap;
@@ -225,16 +245,13 @@ width: 100%;
   border-radius: 5px;
   background: linear-gradient(180deg, rgba(219,241,232,0.5) 0%, rgba(255,255,255,1) 60%);
 } 
-
 .tarjeta h3{
     margin: 1rem 0 1rem 0;
     text-align: center;
 }
-
 .tarjeta p{
     overflow: hidden;
 }
-
 .tarjeta img {
     max-width: 100%;
     display: block;
@@ -242,11 +259,9 @@ width: 100%;
     margin-right: auto;
   border-radius: 5px
 }
-
 .tarjeta .contenido {
     padding: 0 1rem 1rem;
 }
-
 .tarjeta .contenido input{
   color: #fff;
   width: 100%;
@@ -268,64 +283,72 @@ width: 100%;
   text-shadow: 1px 1px 6px #fff;
 }
 
-/*###########################################################*/
-/*###########################################################*/
-/*###########################################################*/
+/*######################################################################################################################*/
+/*######################################################################################################################*/
 
-@media screen and (max-width: 800px) {
+@media only screen and (min-width: 550px) {
+
+    /*################          HEADER          #################*/
     .navLogo{
-        width: 200px;
+        width: 175px;
+    }
+    .hamburger {
+    display: none;
+    }
+    .navMenu {
+        position: static;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0;
+        margin-right: 3vw;
+        left: 0;
+        top: 0;
+        width: auto;
+        background-color: rgba(255, 255, 255, 0);
+        box-shadow:none;
+    }
+    .navItem {
+        font-size: 1rem;
+        margin-right: 3vw;
     }
     .navLink{
         font-size: 1.1rem;
     }
-    .navItem{
-        margin: 0.75rem;
+    .flexMain{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+    }
+    .flexMain article{
+        width: 49%;
+        height: 40vh;
+        margin-bottom: 2%;
+        background-color: rgba(255, 0, 0, 0.308);
+        overflow: hidden;
+    }
+    .flexMain article:nth-child(3n) { /* para cada 3*n elementos article dentro de la clase flex index le aplica esto*/
+    width: 100%;
+    height: 65vh;
+    }
+    .creditosFlex{
+        flex-direction: row;
     }
 
 }
 
-@media screen and (max-width: 650px) {
+/*######################################################################################################################*/
+/*######################################################################################################################*/
+
+@media only screen and (min-width: 768px) {
  
-    .navMenu {
-        position: fixed;
-        left: -100%;
-        top: 11rem;
-        flex-direction: column;
-        background-color: rgb(255, 255, 255);
-        width: 100%;
-        border-radius: 10px;
-        text-align: center;
-        transition: 0.3s;
-        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-    }
 
-    .navMenu.active {
-        left: 0;
-    }
 
-    .navItem {
-        margin: 2.5rem 0;
-    }
 
-    .hamburger {
-        display: block;
-        cursor: pointer;
-    }
 
-    .hamburger.active .bar:nth-child(2) {
-        opacity: 0;
-    }
-
-    .hamburger.active .bar:nth-child(1) {
-        -webkit-transform: translateY(8px) rotate(45deg);
-        transform: translateY(8px) rotate(45deg);
-    }
-
-    .hamburger.active .bar:nth-child(3) {
-        -webkit-transform: translateY(-8px) rotate(-45deg);
-        transform: translateY(-8px) rotate(-45deg);
-    }
 
 }
 
