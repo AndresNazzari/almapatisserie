@@ -38,7 +38,7 @@ li {
     font-family: 'samantha', true-type;
 }
 .colorTextoBase{
-    color: rgb(175, 124, 32);
+    color: rgb(175, 124, 32) !important;
 }
 .separador {
     max-height: 30px;
