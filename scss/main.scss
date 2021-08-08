@@ -1,8 +1,13 @@
+@import "./botstrap/bootstrap.scss";
 @import "_commons";
 @import "_fonts";
-@import "_navBar";
 @import "_content";
-@import "_footer";
+@import "_navBar";
+@import "_tienda";
 
+
+@import "_footer";
+@import "_credits";
+@import "_media";
 //8- CMD ---- npm run build-css
 //9- CMD ---- npm run watch-css

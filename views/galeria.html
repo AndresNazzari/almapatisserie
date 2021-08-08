@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
     <title>Alma Patisserie - Pastelería</title>
     <meta name="keywords" content="Pastelería, Pastelero, Alma, Lomitas, Chocolates, Postres, Cheesecake">
     <meta name="description" content="Soy Jose, Pastelería por encargo">
@@ -20,23 +20,47 @@
 
 
 <body>
-    <header class="centrado">
-        <!--- Menu de navegacion-->
-        <nav class="navBar">
-            <a href="../index.html"><img class="navLogo" src="../img/marca/logo.png" alt="Alma Patisserie"></a>
-            <ul class="navMenu">
-                <li class="navItem"><a class="navLink" href="./nosotros.html">Nosotros</a></li>
-                <li class="navItem"><a class="navLink" href="./galeria.html">Galeria</a></li>
-                <li class="navItem"><a class="navLink" href="./tienda.html">Tienda</a></li>
-                <li class="navItem"><a class="navLink" href="./contacto.html">Contacto</a></li>
-            </ul>
-            <div class="hamburger">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <!--- Menu de navegacion-->
+    <div class="navegacion">
+        <div class="container-fluid ">
+            <div class="row">
+                <a class="col text-center" href="../index.html">
+                    <img src="../assets/img/logo_transparente.png" class="navegacion__logo navegacion__logo--margen"
+                        alt="Alma Pattiserie Logo">
+                </a>
+            </div>
+        </div>
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <button class="navbar-toggler mx-auto navegacion__hamb--color" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon "></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
+                        <li class="nav-item mx-auto ">
+                            <a class="nav-link active navegacion__link navegacion__link--color fw-bold fs-5 m-2"
+                                aria-current="page" href="../views/nosotros.html">Nosotros</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link active navegacion__link navegacion__link--color fw-bold fs-5 m-2"
+                                aria-current="page" href="../views/galeria.html">Galeria</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link active navegacion__link navegacion__link--color fw-bold fs-5 m-2"
+                                aria-current="page" href="../views/tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item mx-auto">
+                            <a class="nav-link active navegacion__link navegacion__link--color fw-bold fs-5 m-2"
+                                aria-current="page" href="../views/contacto.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-    </header>
+    </div>
+    <!--- Menu de navegacion-->
 
     <main>
         <div class="heroeIndex">
@@ -91,36 +115,40 @@
                 </ul>
             </nav>
         </div>
-
-        <div class="creditos">
-            <div class="creditosFlex">
-                <div>
-                    <p class="typ"> Made with</p>
-                    <i class="fas fa-heart typ "></i>
-                    <p class="typ">&</p>
-                    <i class="fas fa-mug-hot typ "></i>
-                    <p class="typ">in Buenos Aires by</p>
-                    <a href="" class="typ ">
-                        <i class="fab fa-dev typ "></i>
-                    </a>
-
-                </div>
-                <div>
-                    <a href="#" class="typ terms">
-                        <i class="fas fa-balance-scale"></i>
-                        <p class="typ">Terms</p>
-                    </a>
-                    <p class="typ">+</p>
-                    <a href="#" class="typ">
-                        <p class="typ"> Privacy</p>
-                        <i class="fas fa-user-secret"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-
     </footer>
 
+    <!--- Creditos -->
+    <div class="creditos creditos--padding container-fluid">
+        <div class="row">
+            <div
+                class="creditos__texto creditos__texto--color col-12 col-md-6 text-center text-md-start justify-content-center">
+                <p class="d-inline-block"> Made with</p>
+                <i class="fas fa-heart typ "></i>
+                <p class="d-inline-block">&</p>
+                <i class="fas fa-mug-hot typ "></i>
+                <p class="d-inline-block">in Buenos Aires by</p>
+                <a href="https://github.com/AndresNazzari" target="_blank""
+                        class=" creditos__texto creditos__texto--color creditos__enlace--decoracion
+                    creditos__enlace--hover">
+                    <i class="fab fa-dev typ "></i>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <a href="#"
+                    class="creditos__texto creditos__texto--color creditos__enlace--decoracion creditos__enlace--hover">
+                    <i class="fas fa-balance-scale"></i>
+                    <p class="d-inline-block">Terms</p>
+                </a>
+                <p class="d-inline-block">+</p>
+                <a href="#"
+                    class="creditos__texto creditos__texto--color creditos__enlace--decoracion creditos__enlace--hover">
+                    <p class="d-inline-block"> Privacy</p>
+                    <i class="fas fa-user-secret"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--- Fin Creditos -->
 
 
     <script src="../js/script.js"></script>
