@@ -3,12 +3,11 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     margin-top: 10vh;
-
 }
 
 .footer__logo {
     grid-column: 1/4;
-    background-image: url("../img/marca/logo.png");
+    background-image: url("../img/logo.png");
 
 }
 
@@ -40,9 +39,14 @@
 
 .footer__contacto {
     font-family: "Butterfly kids";
-}
-
-.footer__contacto--size {
     font-size: 1.5rem;
     margin-left: 2rem;
+    text-align: center;
+    margin: 0;
+
+    @media only screen and (min-width: 768px) {
+        text-align: start;
+
+    }
+
 }

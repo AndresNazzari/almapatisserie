@@ -1,4 +1,3 @@
-@import "./botstrap/bootstrap.scss";
 @import "_commons";
 @import "_fonts";
 @import "_content";
@@ -7,22 +6,6 @@
 @import "_footer";
 @import "_credits";
 @import "_media";
+@import "_404";
 //8- CMD ---- npm run build-css
 //9- CMD ---- npm run watch-css
-
-// scss-docs-start theme-colors-map
-$theme-colors: ("primary": rgb(177, 126, 32),
-    "secondary": rgba(177, 126, 32, 0.75),
-    "success": rgba(228, 172, 68, 0.5),
-    "info": rgba(114, 177, 32, 1),
-    "warning": rgb(219, 250, 119),
-    "danger": rgb(255, 0, 0),
-    "light": rgb(138, 138, 138),
-    "dark": rgb(0, 0, 0));
-
-@each $fondo,
-$color in $theme-colors {
-    .background--#{$fondo} {
-        background-color: $color;
-    }
-}

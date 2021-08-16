@@ -3,38 +3,9 @@
 $colorAlma: rgb(177, 126, 32);
 $fontAlma: 'samantha';
 
-@for $i from 1 to 6 {
+@for $i from 1 through 6 {
     h#{$i} {
+        font-family: $fontAlma;
         color: $colorAlma;
-        font-weight: 600;
-    }
-}
-
-$tamanio: 3rem;
-$menos: 0.75rem;
-
-h1 {
-    font-size: clamp($tamanio - 1.75rem, 5vw, $tamanio + 1rem);
-}
-
-h2 {
-    font-size: clamp($tamanio - 2.5rem, 4vw, $tamanio + 1rem);
-}
-
-h3 {
-    font-size: clamp($tamanio - 2.5rem, 3vw, $tamanio + 1rem);
-}
-
-h4 {
-    font-size: clamp($tamanio - 2.5rem, 2vw, $tamanio + 1rem);
-}
-
-@mixin tarjeta($tipo) {
-    @if $tipo==choco {
-        background: linear-gradient(to right, #6d6027, #d3cbb8);
-    }
-
-    @else if $tipo==pie {
-        background: linear-gradient(to right, #fdc830, #f37335);
     }
 }

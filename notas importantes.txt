@@ -1,0 +1,3 @@
+poner titulos diferentes en cada html
+poner keywords diferentes en cada html
+crear pagina 404

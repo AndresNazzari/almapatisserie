@@ -1,0 +1,4 @@
+User-agent:*
+Disallow: /wireframe
+Disallow: /font
+Disallow: /node_modeules
