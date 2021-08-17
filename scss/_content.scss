@@ -82,7 +82,9 @@
 }
 
 .quienSoy__parrafo {
-    font-family: 'Shadows Into Light', true-type;
+    font-family: 'Rufina', true-type;
+    color: grey;
+    text-align: center !important;
 }
 
 .quienSoy__imagen--size {
@@ -124,10 +126,15 @@
     color: grey;
 }
 
+.dondeEstamos {
+    background-color: whitesmoke;
+    font-family: $fontAlma, true-type;
+}
+
+.dondeEstamos__parrafo {
+    font-family: 'Rufina', true-type;
+    text-align: center !important;
+    color: grey;
+}
+
 /*FIN INDEX*/
-
-
-/*TIENDA*/
-
-
-/*FIN TIENDA*/

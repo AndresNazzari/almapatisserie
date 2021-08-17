@@ -101,7 +101,9 @@ cursive;*/
   color: #b17e20; }
 
 .quienSoy__parrafo {
-  font-family: 'Shadows Into Light', true-type; }
+  font-family: 'Rufina', true-type;
+  color: grey;
+  text-align: center !important; }
 
 .quienSoy__imagen--size {
   width: 70vw; }
@@ -132,9 +134,16 @@ cursive;*/
 .queHacemos__parrafo--color {
   color: grey; }
 
+.dondeEstamos {
+  background-color: whitesmoke;
+  font-family: "samantha", true-type; }
+
+.dondeEstamos__parrafo {
+  font-family: 'Rufina', true-type;
+  text-align: center !important;
+  color: grey; }
+
 /*FIN INDEX*/
-/*TIENDA*/
-/*FIN TIENDA*/
 .navegacion {
   background-color: whitesmoke; }
 
