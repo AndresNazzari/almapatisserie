@@ -144,6 +144,17 @@ cursive;*/
   color: grey; }
 
 /*FIN INDEX*/
+#galeria {
+  background-color: #e3e3e3;
+  text-align: center; }
+
+.section__py {
+  padding: 2rem 0; }
+
+.splide__slide img {
+  max-width: 100%;
+  height: auto; }
+
 .navegacion {
   background-color: whitesmoke; }
 
