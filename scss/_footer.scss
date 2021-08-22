@@ -1,0 +1,52 @@
+/*CSS FOOTER, es el mismo para todas las paginas*/
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 10vh;
+}
+
+.footer__logo {
+    grid-column: 1/4;
+    background-image: url("../img/logo.png");
+
+}
+
+.footer__logo--tamaño {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+}
+
+.footer__frase {
+    text-align: center;
+    margin: auto;
+    font-family: "Butterfly kids";
+    font-size: 2rem;
+}
+
+.footer__redes {
+    text-align: center;
+    grid-column: 1/4;
+}
+
+.footer__iconos {
+    color: rgb(87, 87, 87);
+    font-size: 2.5rem;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+
+.footer__contacto {
+    font-family: "Butterfly kids";
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin: 0;
+
+    @media only screen and (min-width: 768px) {
+        text-align: start;
+
+    }
+
+}

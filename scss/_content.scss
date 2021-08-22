@@ -1,0 +1,84 @@
+/*INDEX*/
+.separador {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' preserveAspectRatio='xMidYMid meet' overflow='visible' height='100%' viewBox='0 0 126 26' fill='rgb(210, 105, 30)' stroke='none'%3E%3Cpath d='M3,10.2c2.6,0,2.6,2,2.6,3.2S4.4,16.5,3,16.5s-3-1.4-3-3.2S0.4,10.2,3,10.2z M18.8,10.2c1.7,0,3.2,1.4,3.2,3.2s-1.4,3.2-3.2,3.2c-1.7,0-3.2-1.4-3.2-3.2S17,10.2,18.8,10.2z M34.6,10.2c1.5,0,2.6,1.4,2.6,3.2s-0.5,3.2-1.9,3.2c-1.5,0-3.4-1.4-3.4-3.2S33.1,10.2,34.6,10.2z M50.5,10.2c1.7,0,3.2,1.4,3.2,3.2s-1.4,3.2-3.2,3.2c-1.7,0-3.3-0.9-3.3-2.6S48.7,10.2,50.5,10.2z M66.2,10.2c1.5,0,3.4,1.4,3.4,3.2s-1.9,3.2-3.4,3.2c-1.5,0-2.6-0.4-2.6-2.1S64.8,10.2,66.2,10.2z M82.2,10.2c1.7,0.8,2.6,1.4,2.6,3.2s-0.1,3.2-1.6,3.2c-1.5,0-3.7-1.4-3.7-3.2S80.5,9.4,82.2,10.2zM98.6,10.2c1.5,0,2.6,0.4,2.6,2.1s-1.2,4.2-2.6,4.2c-1.5,0-3.7-0.4-3.7-2.1S97.1,10.2,98.6,10.2z M113.4,10.2c1.2,0,2.2,0.9,2.2,3.2s-0.1,3.2-1.3,3.2s-3.1-1.4-3.1-3.2S112.2,10.2,113.4,10.2z'/%3E%3C/svg%3E");
+    height: 30px;
+    background-size: contain;
+}
+
+.banner {
+    background-color: whitesmoke;
+}
+
+.banner--padding {
+    padding-bottom: 1rem;
+}
+
+.banner__imagen {
+    background-image: url("../assets/img/beater.svg");
+
+}
+
+.banner__imagen-tamaño {
+    height: 75px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.banner__texto {
+    font-family: $fontAlma, true-type;
+    /*  texto en ruffina*/
+}
+
+.banner__texto--ruffina {
+    font-family: 'Rufina', serif;
+}
+
+.banner__texto--color {
+    color: $colorAlma;
+
+}
+
+.tarjetasIndex__titulo {
+    text-align: center;
+}
+
+.tarjetasIndex__titulo--color {
+    color: $colorAlma;
+}
+
+.tarjetasIndex__texto {
+    text-align: center;
+}
+
+.tarjetasIndex__texto--color {
+    color: black;
+}
+
+
+.dondeEstamos {
+    background-color: whitesmoke;
+    font-family: $fontAlma, true-type;
+}
+
+.dondeEstamos__parrafo {
+    font-family: 'Rufina', true-type;
+    text-align: center !important;
+    color: grey;
+}
+
+/*MINI GALERIA INDEX*/
+#galeria {
+    background-color: #e3e3e3;
+    text-align: center;
+}
+
+.section__py {
+    padding: 2rem 0;
+}
+
+.splide__slide img {
+    max-width: 100%;
+    height: auto;
+
+}
