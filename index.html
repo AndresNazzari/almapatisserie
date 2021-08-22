@@ -8,7 +8,7 @@
     <meta name="description"
         content="Soy Jose, Pastlera profesional recibida en el Instituto Argentino de Gastronomia (IAG). En Alma Patisserie hacemos pastelería por encargo. Ofecemos en Lomas de Zamora. Ademas ofrecemos servicio de mesa dulce para cualquier tipo de evento">
     <meta name="keywords" content="Pastelería, IAG, Alma, patisserie, lomas, chocolate, postre, cheesecake, lemon pie">
-    <link rel="shortcut icon" href="./img/favicon-32x32.png">
+    <link rel="shortcut icon" href="./assets/img/favicon-32x32.png">
 
     <!-- Mi CSS -->
     <link rel="stylesheet" href="./css/main.css">
@@ -21,11 +21,13 @@
         integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <!-- Splide CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
+    <!-- animate on scroll CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!--- Your site is ready to be published at https://andresnazzari.github.io/almapatisserie/ -->
 </head>
 
 
-<body>
+<body data-aos-easing="ease" data-aos-duration="400" data-aos-delay="0">
     <!--- Menu de navegacion-->
     <div class="navegacion">
         <div class="container-fluid ">
@@ -135,189 +137,41 @@
         </div>
 
         <!--- Tarjetas -->
-        <div class="container-fluid mt-4 tarjetas">
+        <div class="container-fluid mt-4 tarjetasIndex">
             <div class="row align-items-center justify-content-center">
-                <div class="col-12 col-md-4 card mb-3 border-0 rounded-3">
+                <div class="col-12 col-md-4 card mb-3 border-0 rounded-3 aos-init aos-animate" data-aos="fade-right">
                     <img src="./assets/img/mesa1_mob.jpg" class="card-img-top" alt="mesa1">
                     <div class="card-body">
-                        <h5 class="card-title tarjetas__titulo tarjetas__titulo--color">Endulzando tus recuerdos</h5>
-                        <p class="card-text tarjetas__texto tarjetas__texto--color">Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. </p>
+                        <h5 class="card-title tarjetasIndex__titulo tarjetasIndex__titulo--color">Endulzando tus
+                            Recuerdos</h5>
+                        <p class="card-text tarjetasIndex__texto tarjetasIndex__texto--color">Mesas dulces para todo
+                            tipo de
+                            eventos. </p>
                         <p class="card-text"><small class="text-muted"></small></p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 card mb-3 border-0 rounded-3">
+                <div class="col-12 col-md-4 card mb-3 border-0 rounded-3 aos-init aos-animate" data-aos="flip-left">
                     <img src="./assets/img/letterM.jpg" class="card-img-top" alt="mesa1">
                     <div class="card-body">
-                        <h5 class="card-title tarjetas__titulo tarjetas__titulo--color">Endulzando tus recuerdos</h5>
-                        <p class="card-text tarjetas__texto tarjetas__texto--color">Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. </p>
+                        <h5 class="card-title tarjetasIndex__titulo tarjetasIndex__titulo--color">Pasteleria Cretariva
+                        </h5>
+                        <p class="card-text tarjetasIndex__texto tarjetasIndex__texto--color">Sorprendelos con sus
+                            iniciales.</p>
                         <p class="card-text"><small class="text-muted"></small></p>
                     </div>
                 </div>
-                <div class="col-12 col-md-4 card mb-3 border-0 rounded-3">
+                <div class="col-12 col-md-4 card mb-3 border-0 rounded-3 aos-init aos-animate" data-aos="fade-left">
                     <img src="./assets/img/chesse1.jpg" class="card-img-top" alt="mesa1">
                     <div class="card-body">
-                        <h5 class="card-title tarjetas__titulo tarjetas__titulo--color">Endulzando tus recuerdos</h5>
-                        <p class="card-text tarjetas__texto tarjetas__texto--color">Lorem ipsum dolor sit, amet
-                            consectetur adipisicing elit. </p>
+                        <h5 class="card-title tarjetasIndex__titulo tarjetasIndex__titulo--color">Alta Calidad</h5>
+                        <p class="card-text tarjetasIndex__texto tarjetasIndex__texto--color">Alta calidad con sabor
+                            casero. </p>
                         <p class="card-text"><small class="text-muted"></small></p>
                     </div>
                 </div>
             </div>
         </div>
         <!--- Fin Tarjetas -->
-
-        <div class="container-fluid row justify-content-center">
-            <div class="col-8  m-4 separador">
-            </div>
-        </div>
-
-        <!--- Quien soy -->
-        <div class="quienSoy container-fluid py-3">
-            <div class="row align-items-center justify-content-center">
-                <h3 class="col-12 text-center fs-1 quienSoy__titulo quienSoy__titulo--color fw-bold mb-3">
-                    Quién Soy
-                </h3>
-                <div class="quienSoy__parrafo col-10 col-md-4 ">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus ratione aliquid facilis
-                    autem necessitatibus quae provident ex totam cum quo! Temporibus quae quas praesentium! Non
-                    itaque blanditiis aut quidem unde.
-                </div>
-                <div class="col-12 col-md-4 text-center">
-                    <img src="./assets/img/jose_bn_mob.jpg" class="img-thumbnail rounded-circle quienSoy__imagen--size"
-                        alt="Jose">
-                </div>
-            </div>
-        </div>
-        <!--- Fin Quien soy -->
-
-        <!--- Que hacemos -->
-        <div class="queHacemos container-fluid">
-            <div class="container-fluid">
-                <div class="row align-items-center justify-content-center">
-                    <h3 class="col-12 text-center fs-1 fw-bold mb-3 queHacemos__titulo queHacemos__titulo--color">
-                        Qué hacemos
-                    </h3>
-                    <div class="col-12 col-md-3">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="50" height="50">
-                                <g id="outline" fill="rgb(175, 124, 32)">
-                                    <path d="M49,56H45a1,1,0,0,0,0,2h4a1,1,0,0,0,0-2Z"></path>
-                                    <path
-                                        d="M40.991,19.019a4.937,4.937,0,0,0-4.047,1.933,5.279,5.279,0,0,0-.413-.463,4.955,4.955,0,0,0-3.54-1.47A5.151,5.151,0,0,0,28,24c0,4.414,1.526,5.94,3.293,7.707l5,5a1,1,0,0,0,1.414,0l5-5C44.474,29.94,46,28.414,46,24a4.984,4.984,0,0,0-1.532-3.478A5.067,5.067,0,0,0,40.991,19.019Zm.3,11.274L37,34.586l-4.293-4.293C31.019,28.6,30,27.586,30,24a3.176,3.176,0,0,1,3.009-2.981h.024a3.047,3.047,0,0,1,2.09.891A2.927,2.927,0,0,1,36,24a1,1,0,0,0,2,0,2.823,2.823,0,0,1,3.009-2.981h.019a3.013,3.013,0,0,1,2.033.924A2.973,2.973,0,0,1,44,24C44,27.586,42.981,28.6,41.293,30.293Z">
-                                    </path>
-                                    <path
-                                        d="M11.5,43.839,20,52.412V61a1,1,0,0,0,1,1H53a1,1,0,0,0,1-1V19a17,17,0,0,0-34,0V37.749L18.781,36.52a5.116,5.116,0,0,0-7.278,0A5.216,5.216,0,0,0,11.5,43.839ZM22,19a15,15,0,0,1,30,0V52H22Zm0,35H52v6H22ZM12.923,37.928a3.117,3.117,0,0,1,4.438,0L20,40.591V49.57l-7.076-7.139A3.21,3.21,0,0,1,12.923,37.928Z">
-                                    </path>
-                                </g>
-                            </svg>
-                            <h5 class="text-center m-1 queHacemos__subTitulo queHacemos__subTitulo--color">Mesas dulces
-                            </h5>
-                            <p class="queHacemos__parrafo queHacemos__parrafo--color">Agrégale un toque dulce a tu
-                                reuniones, cumpleaños o eventos..</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" id="Capa_1" height="50"
-                                viewBox="0 0 511.208 511.208" width="50">
-                                <g>
-                                    <g fill="rgb(175, 124, 32)">
-                                        <path
-                                            d="m414.647 310.577c-4.142 0-7.5 3.358-7.5 7.5v13.384c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-13.384c0-4.142-3.358-7.5-7.5-7.5z">
-                                        </path>
-                                        <path
-                                            d="m348.53 310.577c-4.142 0-7.5 3.358-7.5 7.5v13.384c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-13.384c0-4.142-3.358-7.5-7.5-7.5z">
-                                        </path>
-                                        <path
-                                            d="m381.589 258.622c-4.142 0-7.5 3.358-7.5 7.5v13.384c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-13.384c0-4.142-3.358-7.5-7.5-7.5z">
-                                        </path>
-                                        <path
-                                            d="m452.201 258.622c-4.142 0-7.5 3.358-7.5 7.5v13.384c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-13.384c0-4.142-3.358-7.5-7.5-7.5z">
-                                        </path>
-                                        <path
-                                            d="m381.589 355.695c-4.142 0-7.5 3.358-7.5 7.5v13.384c0 4.142 3.358 7.5 7.5 7.5s7.5-3.358 7.5-7.5v-13.384c0-4.142-3.358-7.5-7.5-7.5z">
-                                        </path>
-                                        <path
-                                            d="m473.732 193.536c1.593-1.544 3.164-3.126 4.687-4.792 12.942-14.161 20.823-31.129 22.791-49.069.528-4.815-1.839-9.492-6.029-11.916-15.42-8.922-33.509-12.646-52.316-10.767-5.2.519-10.212 1.367-14.99 2.525-.653-5.682-1.8-11.412-3.451-17.135-1.148-3.98-5.303-6.276-9.285-5.128-3.98 1.148-6.276 5.305-5.128 9.285 1.724 5.979 2.81 11.942 3.268 17.808-4.597 1.977-8.858 4.294-12.701 6.947-7.154 4.938-13.514 10.526-18.993 16.612-5.476-6.087-11.831-11.675-18.983-16.612-3.829-2.643-8.073-4.953-12.651-6.925.767-7.842 2.972-16.199 6.547-24.685 5.854-13.896 15.136-25.221 26.906-32.858 4.532 3.342 8.667 7.293 12.312 11.766 2.616 3.211 7.341 3.693 10.552 1.076 3.211-2.616 3.693-7.341 1.076-10.552-4.922-6.041-10.595-11.312-16.859-15.667-3.977-2.765-9.216-2.921-13.349-.399-15.206 9.282-27.122 23.395-34.46 40.811-3.66 8.688-6.088 17.351-7.242 25.691-4.817-1.174-9.871-2.034-15.118-2.558-18.803-1.878-36.897 1.846-52.317 10.767-4.19 2.424-6.557 7.102-6.029 11.916 1.967 17.94 9.848 34.908 22.791 49.069 1.525 1.669 3.089 3.274 4.685 4.822-6.889 6.974-13.003 14.714-18.182 23.094-23.1-18.007-50.943-27.093-78.831-27.262.032-2.216-.001-4.45-.103-6.701-.862-19.165-7.287-36.736-18.581-50.813-3.031-3.778-8.011-5.414-12.689-4.163-17.212 4.595-32.637 14.754-44.607 29.38-3.309 4.042-6.253 8.185-8.812 12.381-5.921-4.697-12.486-8.826-19.646-12.314-17.248-8.402-35.754-11.155-53.515-7.961-4.766.857-8.582 4.451-9.721 9.157-4.189 17.315-2.637 35.72 4.491 53.224 3.556 8.736 7.978 16.564 13.063 23.277-4.242 2.578-8.43 5.547-12.516 8.891-14.625 11.97-24.785 27.395-29.38 44.607-1.249 4.677.384 9.657 4.163 12.69 14.077 11.294 31.648 17.719 50.813 18.581 1.713.077 3.415.116 5.107.116.514 0 1.023-.017 1.535-.025.2 34.333 13.657 66.58 37.955 90.879 5.657 5.657 11.624 10.568 18.239 15.014 3.439 2.311 8.098 1.396 10.408-2.042s1.396-8.098-2.042-10.408c-5.802-3.898-11.035-8.207-15.999-13.17-44.69-44.69-44.69-117.407 0-162.097 44.689-44.689 117.405-44.691 162.097 0 10.97 10.97 23.658 27.553 34.591 67.369 2.13 7.76 3.964 15.576 5.452 23.23 6.592 33.93 6.597 64.295.013 90.253-2.662 10.49-10.85 18.649-21.369 21.292-49.082 12.332-102.877-1.398-130.576-10.68-1.475-.494-2.934-1.001-4.378-1.521-3.896-1.403-8.194.618-9.598 4.515s.618 8.194 4.515 9.598c1.549.558 3.113 1.101 4.695 1.631 20.848 6.986 55.756 16.338 93.208 16.338 15.101 0 30.622-1.522 45.79-5.333 14.024-3.524 25.294-13.555 30.504-26.767 9.951 9.599 21.014 18.482 33.246 25.802 7.045 4.215 14.943 6.322 22.841 6.322 7.85 0 15.7-2.083 22.701-6.251 24.924-14.838 47.995-37.827 68.571-68.327 4.572-6.777 9.004-13.927 13.172-21.25 12.432-21.844 25.141-48.373 25.141-79.517-.004-35.466-14.324-67.644-37.48-91.071zm-410.931 111.162c-2.236.06-4.485.053-6.738-.048-15.31-.689-29.327-5.583-40.662-14.175 3.991-13.452 12.223-25.56 23.893-35.111 10.872-8.897 22.358-14.653 33.216-16.643 6.227-1.141 12.44-1.624 18.512-1.501-15.794 19.373-25.522 42.648-28.221 67.478zm33.86-107.584c-1.568 8.554-2.112 17.004-1.676 25.183-8.178-.437-16.626.103-25.178 1.67-4.575.839-9.208 2.206-13.838 4.048-5.004-6.087-9.356-13.553-12.829-22.083-5.687-13.967-7.131-28.538-4.209-42.26 14.063-2.131 28.714.269 42.492 6.981 7.065 3.441 13.63 7.728 19.307 12.569-1.853 4.648-3.228 9.299-4.069 13.892zm80.73-6.936c-24.127 2.645-47.644 12.032-67.471 28.161-.126-6.075.353-12.291 1.495-18.52 1.99-10.859 7.745-22.345 16.643-33.217 9.551-11.67 21.658-19.902 35.11-23.893 8.593 11.335 13.486 25.352 14.175 40.662.102 2.276.111 4.548.048 6.807zm231.707-46.541c9.085-6.271 21.276-10.324 35.255-11.719 15.005-1.499 29.387 1.242 41.722 7.932-1.939 14.091-8.391 27.463-18.729 38.775-1.539 1.684-3.15 3.284-4.793 4.837-18.927-15.182-42.184-25.176-67.599-27.792 4.201-4.384 8.934-8.437 14.144-12.033zm-131.996-3.787c12.333-6.689 26.714-9.429 41.722-7.932 13.979 1.395 26.17 5.448 35.256 11.719 5.214 3.599 9.958 7.652 14.171 12.035-25.421 2.612-48.686 12.599-67.615 27.786-1.647-1.553-3.265-3.147-4.805-4.833-10.339-11.313-16.79-24.684-18.729-38.775zm195.929 216.851c-3.981 6.994-8.21 13.817-12.571 20.281-19.331 28.654-40.799 50.128-63.81 63.827-9.298 5.536-20.858 5.516-30.167-.054-13.761-8.235-25.998-18.659-36.72-29.884 4.53-25.363 3.768-53.965-2.307-85.233-1.56-8.025-3.481-16.214-5.711-24.34-6.655-24.236-16.427-51.981-38.449-74.004-.195-.195-.395-.383-.591-.576 19.928-33.913 56.785-56.733 98.883-56.733 63.202 0 114.62 51.418 114.62 114.619 0 15.514-2.754 36.212-23.177 72.097z">
-                                        </path>
-                                        <path
-                                            d="m243.989 313.939c-2.929-2.929-7.678-2.929-10.606 0-2.929 2.929-2.929 7.678 0 10.606l9.464 9.464c1.464 1.464 3.384 2.197 5.303 2.197s3.839-.732 5.303-2.197c2.929-2.929 2.929-7.678 0-10.606z">
-                                        </path>
-                                        <path
-                                            d="m186.631 360.69c-2.929 2.929-2.929 7.678 0 10.606l9.464 9.464c1.464 1.465 3.384 2.197 5.303 2.197s3.839-.732 5.303-2.197c2.929-2.929 2.929-7.678 0-10.606l-9.464-9.464c-2.928-2.929-7.677-2.928-10.606 0z">
-                                        </path>
-                                        <path
-                                            d="m183.876 300.577c-2.929-2.929-7.678-2.929-10.606 0-2.929 2.929-2.929 7.678 0 10.606l9.464 9.464c1.464 1.464 3.384 2.197 5.303 2.197s3.839-.732 5.303-2.197c2.929-2.929 2.929-7.678 0-10.606z">
-                                        </path>
-                                        <path
-                                            d="m233.806 250.646c-2.929-2.93-7.678-2.929-10.606 0-2.929 2.929-2.929 7.678 0 10.606l9.464 9.464c1.464 1.465 3.384 2.197 5.303 2.197s3.839-.732 5.303-2.197c2.929-2.929 2.929-7.678 0-10.606z">
-                                        </path>
-                                        <path
-                                            d="m133.945 350.507c-2.929-2.929-7.678-2.929-10.606 0-2.929 2.929-2.929 7.678 0 10.606l9.464 9.464c1.464 1.464 3.384 2.197 5.303 2.197s3.839-.732 5.303-2.197c2.929-2.929 2.929-7.678 0-10.606z">
-                                        </path>
-                                        <path
-                                            d="m241.911 369.218c-2.929 2.929-2.929 7.677 0 10.606l9.464 9.464c1.464 1.465 3.384 2.197 5.303 2.197s3.839-.732 5.303-2.197c2.929-2.929 2.929-7.677 0-10.606l-9.464-9.464c-2.928-2.93-7.677-2.929-10.606 0z">
-                                        </path>
-                                    </g>
-                                </g>
-                            </svg>
-                            <h5 class="text-center m-1 queHacemos__subTitulo queHacemos__subTitulo--color ">Pastelería
-                            </h5>
-                            <p class="queHacemos__parrafo queHacemos__parrafo--color">Productos de primera calidad y
-                                sabor único en nuestra tienda online.</p>
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="d-flex flex-column justify-content-center align-items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="50" height="50">
-                                <g id="outline" fill="rgb(175, 124, 32)">
-                                    <path
-                                        d="M475.094,66.219A76.691,76.691,0,0,0,411.155,32H408V24a8,8,0,0,0-16,0v8H112A56.063,56.063,0,0,0,56,88v48a56.092,56.092,0,0,0,40,53.659V206a18.022,18.022,0,0,0,16,17.882V240H100a19.975,19.975,0,0,0-12,35.962v69.2a71.184,71.184,0,0,0,7.479,31.677A70.435,70.435,0,0,0,136,412.26V432H80a24,24,0,0,0,0,48v8a8,8,0,0,0,8,8h32a8,8,0,0,0,5.657-2.343L139.313,480H397.578l21.984,14.656A8.005,8.005,0,0,0,424,496h24a8,8,0,0,0,8-8V440c0-.1-.012-.206-.016-.31,0-.12-.008-.241-.018-.361-.015-.184-.04-.364-.068-.544-.011-.072-.014-.144-.027-.216l-16.587-91.227a291.093,291.093,0,0,1,15.853-159.626l19.957-29.935A76.6,76.6,0,0,0,488,115.155v-6.31A76.6,76.6,0,0,0,475.094,66.219ZM72,136V88a40.045,40.045,0,0,1,40-40H411.155a60.724,60.724,0,0,1,50.626,27.094c1.063,1.594,2.037,3.234,2.939,4.906H440a8,8,0,0,0,0,16h30.629A60.912,60.912,0,0,1,472,108.845V112H440a8,8,0,0,0,0,16h30.629a60.508,60.508,0,0,1-5.928,16.035c-.232-.02-.465-.035-.7-.035H440a8,8,0,0,0,0,16h14.385l-10.666,16H112A40.045,40.045,0,0,1,72,136ZM337.545,249.4A183.235,183.235,0,0,1,344,297.6v7.2A181.933,181.933,0,0,1,292.629,432H264V412.26a70.437,70.437,0,0,0,40.521-35.415A71.192,71.192,0,0,0,312,345.167v-69.2A19.975,19.975,0,0,0,300,240H160V224h38a18.021,18.021,0,0,0,18-18V192H321.89ZM200,192v14a2,2,0,0,1-2,2H114a2,2,0,0,1-2-2V192Zm-72,32h16v16H128Zm-28,32H300a4,4,0,0,1,0,8H100a4,4,0,0,1,0-8Zm9.789,113.688A55.109,55.109,0,0,1,104,345.167V280H296v65.167a55.117,55.117,0,0,1-5.789,24.522A54.532,54.532,0,0,1,241.167,400H158.833A54.531,54.531,0,0,1,109.789,369.688ZM152,416h96v16H152Zm288,64H426.422l-21.984-14.656A8.005,8.005,0,0,0,400,464H136a8,8,0,0,0-5.657,2.343L116.687,480H96v-8a8,8,0,0,0-8-8H80a8,8,0,0,1,0-16H440ZM423.542,350.2,438.414,432h-124.3A199.3,199.3,0,0,0,360,304.8v-7.2a199.162,199.162,0,0,0-7.02-52.411L338.474,192h97.95A307.039,307.039,0,0,0,423.542,350.2Z">
-                                    </path>
-                                    <path
-                                        d="M248.006,376a7.97,7.97,0,0,0,3.572-.847A36.744,36.744,0,0,0,272,342.111V336a8,8,0,0,0-16,0v6.111a20.833,20.833,0,0,1-11.578,18.734A8,8,0,0,0,248.006,376Z">
-                                    </path>
-                                    <path d="M264,320a8,8,0,0,0,8-8v-8a8,8,0,0,0-16,0v8A8,8,0,0,0,264,320Z"></path>
-                                    <path
-                                        d="M376,144a32,32,0,1,0-32-32A32.036,32.036,0,0,0,376,144Zm0-48a16,16,0,1,1-16,16A16.019,16.019,0,0,1,376,96Z">
-                                    </path>
-                                    <path
-                                        d="M296,144a32,32,0,1,0-32-32A32.036,32.036,0,0,0,296,144Zm0-48a16,16,0,1,1-16,16A16.019,16.019,0,0,1,296,96Z">
-                                    </path>
-                                    <path d="M128,80a8,8,0,0,0-8-8H104a8,8,0,0,0,0,16h16A8,8,0,0,0,128,80Z"></path>
-                                    <path d="M152,88h40a8,8,0,0,0,0-16H152a8,8,0,0,0,0,16Z"></path>
-                                </g>
-                            </svg>
-                            <h5 class="text-center m-1 queHacemos__subTitulo queHacemos__subTitulo--color">Tortas altas
-                            </h5>
-                            <p class="queHacemos__parrafo queHacemos__parrafo--color">Elaboración de las famosas
-                                High cakes personalizadas y con rellenos a elección.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--- Fin Que hacemos -->
-
-
-        <!--- Donde Estamos -->
-        <div class="dondeEstamos container-fluid py-3">
-            <div class="row align-items-center justify-content-center">
-                <h3 class="col-12 text-center fs-1 quienSoy__titulo quienSoy__titulo--color fw-bold mb-3">
-                    Donde estamos
-                </h3>
-                <p class="col-12 dondeEstamos__parrafo">
-                    Los pedidos se retiran unicamente por Las Lomitas, Lomas de Zamora
-                </p>
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d819.4028493165498!2d-58.40083851183739!3d-34.76538069706076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcd2eb88327abb%3A0x58097aa3fd8ae554!2sGeneral%20Bartolom%C3%A9%20Mitre%20%26%20Espa%C3%B1a%2C%20Lomas%20de%20Zamora%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1sen!2sar!4v1629154861251!5m2!1sen!2sar"
-                    width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-            </div>
-        </div>
-        <!-- Fin Donde Estamos -->
 
         <div class="container-fluid row justify-content-center">
             <div class="col-8  m-4 separador">
@@ -332,25 +186,39 @@
                         <ul class="splide__list">
                             <li class="splide__slide">
                                 <a href="./img/huevo.jpg" data-lightbox="roadtrip">
-                                    <img src="./img/huevo.jpg" alt="Carrousel imagen 1">
+                                    <img src="./assets/img/brownie.jpg" alt="brownie">
                                 </a>
                             </li>
                             <li class="splide__slide">
-                                <a href="./img/chocomoka.jpg" data-lightbox="roadtrip">
-                                    <img src="./img/chocomoka.jpg" alt="Carrousel imagen 1">
+                                <a href="./assets/img/cheesecake_newyork.jpg" data-lightbox="roadtrip">
+                                    <img src="./assets/img/cheesecake_newyork.jpg" alt="cheesecake_newyork">
                                 </a>
                             </li>
                             <li class="splide__slide">
-                                <a href="./img/chocomoka.jpg" data-lightbox="roadtrip">
-                                    <img src="./img/chocomoka.jpg" alt="Carrousel imagen 1">
+                                <a href="./assets/img/huevo.jpg" data-lightbox="roadtrip">
+                                    <img src="./assets/img/huevo.jpg" alt="huevo_relleno">
                                 </a>
                             </li>
                             <li class="splide__slide">
-                                <a href="./img/chocomoka.jpg" data-lightbox="roadtrip">
-                                    <img src="./img/chocomoka.jpg" alt="Carrousel imagen 1">
+                                <a href="./assets/img/lemonpie.jpg" data-lightbox="roadtrip">
+                                    <img src="./assets/img/lemonpie.jpg" alt="lemonpie">
                                 </a>
                             </li>
-
+                            <li class="splide__slide">
+                                <a href="./assets/img/smash1.jpg" data-lightbox="roadtrip">
+                                    <img src="./assets/img/smash1.jpg" alt="smash_unicornio">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="./assets/img/pablova_crema.jpg" data-lightbox="roadtrip">
+                                    <img src="./assets/img/pablova_crema.jpg" alt="pablova_crema">
+                                </a>
+                            </li>
+                            <li class="splide__slide">
+                                <a href="./assets/img/mesa2.jpg" data-lightbox="roadtrip">
+                                    <img src="./assets/img/mesa2.jpg" alt="mesa">
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -441,6 +309,9 @@
         crossorigin="anonymous"></script>
     <!-- Splide Script -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <!-- animate on scroll script -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
     <!-- MI Script -->
     <script src="./js/script.js"></script>
 </body>

@@ -28,6 +28,9 @@ h6 {
   font-family: "samantha";
   color: #b17e20; }
 
+* {
+  font-family: 'Roboto', sans-serif; }
+
 /* font-family: 'Butterfly Kids', cursive;*/
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Rufina', serif; */
@@ -37,10 +40,6 @@ cursive;*/
 @font-face {
   font-family: samantha;
   src: url("../font/samantha.ttf") format("truetype"); }
-
-/*CSS GENERAL*/
-* {
-  font-family: 'Roboto', sans-serif; }
 
 /*INDEX*/
 .separador {
@@ -55,7 +54,7 @@ cursive;*/
   padding-bottom: 1rem; }
 
 .banner__imagen {
-  background-image: url("../img/beater.svg"); }
+  background-image: url("../assets/img/beater.svg"); }
 
 .banner__imagen-tamaño {
   height: 75px;
@@ -73,66 +72,17 @@ cursive;*/
 .banner__texto--color {
   color: #b17e20; }
 
-@media only screen and (min-width: 768px) {
-  .tarjetas {
-    padding-left: 5vw !important;
-    padding-right: 5vw !important; } }
-
-.tarjetas__titulo {
+.tarjetasIndex__titulo {
   text-align: center; }
 
-.tarjetas__titulo--color {
+.tarjetasIndex__titulo--color {
   color: #b17e20; }
 
-.tarjetas__texto {
+.tarjetasIndex__texto {
   text-align: center; }
 
-.tarjetas__texto--color {
+.tarjetasIndex__texto--color {
   color: black; }
-
-.quienSoy {
-  background-color: whitesmoke;
-  font-family: "samantha", true-type; }
-
-.quienSoy__titulo {
-  font-family: "samantha", true-type; }
-
-.quienSoy__titulo--color {
-  color: #b17e20; }
-
-.quienSoy__parrafo {
-  font-family: 'Rufina', true-type;
-  color: grey;
-  text-align: center !important; }
-
-.quienSoy__imagen--size {
-  width: 70vw; }
-  @media only screen and (min-width: 768px) {
-    .quienSoy__imagen--size {
-      width: 400px; } }
-
-.queHacemos {
-  margin-top: 1.5rem !important; }
-
-.queHacemos__titulo {
-  font-family: "samantha", true-type; }
-
-.queHacemos__titulo--color {
-  color: #b17e20; }
-
-.queHacemos__subTitulo {
-  font-family: "samantha", true-type;
-  padding-top: 1rem; }
-
-.queHacemos__subTitulo--color {
-  color: #b17e20; }
-
-.queHacemos__parrafo {
-  font-family: 'Rufina', true-type;
-  text-align: center !important; }
-
-.queHacemos__parrafo--color {
-  color: grey; }
 
 .dondeEstamos {
   background-color: whitesmoke;
@@ -143,7 +93,7 @@ cursive;*/
   text-align: center !important;
   color: grey; }
 
-/*FIN INDEX*/
+/*MINI GALERIA INDEX*/
 #galeria {
   background-color: #e3e3e3;
   text-align: center; }
@@ -173,79 +123,134 @@ cursive;*/
 .navegacion__hamb--color {
   color: #b17e20 !important; }
 
-.heroeTienda {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/productos_tienda/smash.PNG");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  height: 45vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 3vh; }
+.quienSoy {
+  margin-top: 2rem;
+  font-family: "samantha", true-type; }
 
-.tituloTienda {
-  font-family: "samantha";
-  font-size: 4rem;
-  color: #c17d05;
-  padding: 2rem;
-  background: rgba(105, 105, 105, 0.3); }
+.quienSoy__titulo {
+  font-family: "samantha", true-type; }
 
-.tarjetas {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: stretch;
-  justify-content: center; }
+.quienSoy__titulo--color {
+  color: #b17e20; }
 
-.tarjeta {
-  max-width: 25vw;
-  flex: 0 0 25vw;
-  margin: 10px;
-  border: 1px solid #ccc;
-  box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  border-radius: 5px; }
+.quienSoy__parrafo {
+  font-family: 'Rufina', true-type;
+  color: grey;
+  text-align: center !important; }
 
-.tarjeta h3 {
-  margin: 1rem 0 1rem 0;
-  text-align: center; }
+.quienSoy__imagen--size {
+  width: 70vw; }
+  @media only screen and (min-width: 768px) {
+    .quienSoy__imagen--size {
+      width: 400px; } }
 
-.tarjeta p {
-  overflow: hidden; }
+.queHacemos {
+  /*background-color: whitesmoke;*/
+  margin-top: 1.5rem !important; }
 
-.tarjeta img {
-  max-width: 100%;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  border-radius: 5px;
-  transition: all 1s; }
+.queHacemos__titulo {
+  font-family: "samantha", true-type; }
 
-.tarjeta img:hover {
-  transform: scale(1.1); }
+.queHacemos__titulo--color {
+  color: #b17e20; }
 
-.tarjeta .contenido {
-  padding: 0 1rem 1rem; }
+.queHacemos__subTitulo {
+  font-family: "samantha", true-type;
+  padding-top: 1rem; }
 
-.tarjeta .contenido input {
-  color: #fff;
-  width: 100%;
-  font-size: 20px;
-  font-weight: 500;
-  margin-top: 1rem;
-  padding: 0.5rem 1.2rem;
-  background: #318aac;
-  position: relative;
-  border: 2px solid #318aac;
-  outline: 1px solid;
-  outline-color: rgba(49, 138, 172, 0.4);
-  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1); }
+.queHacemos__subTitulo--color {
+  color: #b17e20; }
 
-.tarjeta .contenido input:hover {
-  box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
-  outline-color: rgba(49, 138, 172, 0);
-  outline-offset: 80px;
-  text-shadow: 1px 1px 6px #fff; }
+.queHacemos__parrafo {
+  font-family: 'Rufina', true-type;
+  text-align: center !important; }
+
+.queHacemos__parrafo--color {
+  color: grey; }
+
+.nosotrosGaleria {
+  width: 90%;
+  margin: auto; }
+  .nosotrosGaleria div {
+    display: grid; }
+    @media only screen and (min-width: 576px) {
+      .nosotrosGaleria div {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (min-width: 992px) {
+      .nosotrosGaleria div {
+        grid-template-columns: repeat(6, 1fr); } }
+    .nosotrosGaleria div article {
+      margin: 0.25rem; }
+      .nosotrosGaleria div article a img {
+        width: 100%; }
+
+#nuestrosProductos {
+  margin-top: 2rem; }
+
+.tarjetasTienda {
+  width: 95%;
+  margin: auto; }
+  @media only screen and (min-width: 1400px) {
+    .tarjetasTienda {
+      width: 70vw; } }
+  .tarjetasTienda div {
+    padding: 0 1rem 1rem;
+    display: grid; }
+    @media only screen and (min-width: 576px) {
+      .tarjetasTienda div {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (min-width: 992px) {
+      .tarjetasTienda div {
+        grid-template-columns: repeat(3, 1fr); } }
+    .tarjetasTienda div article {
+      margin: 1rem;
+      border: 1px solid #ccc;
+      box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      display: grid; }
+      .tarjetasTienda div article div {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        .tarjetasTienda div article div h3 {
+          margin: 1rem 0 1rem 0;
+          text-align: center;
+          font-family: 'Rufina', serif; }
+        .tarjetasTienda div article div p {
+          overflow: hidden;
+          text-align: center;
+          margin-left: 0.5rem;
+          margin-right: 0.5rem; }
+        .tarjetasTienda div article div input {
+          margin-right: auto;
+          margin-left: auto;
+          display: block;
+          justify-self: end;
+          color: #fff;
+          width: 80%;
+          font-size: 1rem;
+          font-weight: 500;
+          padding: 0.5rem 1.2rem;
+          background: #b17e20;
+          position: relative;
+          border: 2px solid #b17e20;
+          outline: 1px solid;
+          outline-color: #b17e20;
+          transition: all 1s cubic-bezier(0.19, 1, 0.22, 1); }
+        .tarjetasTienda div article div input:hover {
+          box-shadow: inset 0 0 20px rgba(49, 138, 172, 0.5), 0 0 20px rgba(49, 138, 172, 0.4);
+          outline-color: rgba(49, 138, 172, 0);
+          outline-offset: 80px;
+          text-shadow: 1px 1px 6px #fff; }
+      .tarjetasTienda div article img {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem;
+        object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10%; }
 
 /*CSS FOOTER, es el mismo para todas las paginas*/
 .footer {
@@ -306,34 +311,6 @@ cursive;*/
 
 .creditos__enlace--hover:hover {
   color: black; }
-
-@media only screen and (min-width: 576px) {
-  .logoNav {
-    width: 175px; }
-  .flexMain {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: row;
-    align-items: center; }
-  .flexMain article {
-    width: 49%;
-    height: 40vh;
-    margin-bottom: 2%;
-    background-color: rgba(255, 0, 0, 0.308);
-    overflow: hidden; }
-  .flexMain article:nth-child(3n) {
-    /* para cada 3*n elementos article dentro de la clase flex index le aplica esto*/
-    width: 100%;
-    height: 65vh; }
-  .creditosFlex {
-    flex-direction: row; } }
-
-@media only screen and (min-width: 768px) {
-  /*.carouselImg{
-        max-height: 70vh;
-        object-fit: cover;
-    }*/ }
 
 .oops__texto {
   font-family: 'Rufina', serif;
