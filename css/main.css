@@ -103,7 +103,11 @@ cursive;*/
 
 .splide__slide img {
   max-width: 100%;
-  height: auto; }
+  height: auto;
+  cursor: zoom-in; }
+
+.splide__slide img:hover {
+  opacity: 0.9; }
 
 .navegacion {
   background-color: whitesmoke; }
@@ -182,7 +186,31 @@ cursive;*/
     .nosotrosGaleria div article {
       margin: 0.25rem; }
       .nosotrosGaleria div article a img {
-        width: 100%; }
+        width: 100%;
+        cursor: zoom-in;
+        border-radius: 10%; }
+      .nosotrosGaleria div article a img:hover {
+        opacity: 0.9; }
+
+.gallery-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 328px);
+  justify-content: center;
+  margin: 0 auto; }
+
+.gallery__item a img {
+  width: auto;
+  object-fit: cover;
+  margin-bottom: 1.5rem;
+  border-radius: 15px;
+  background-color: lightgrey;
+  cursor: zoom-in; }
+
+.gallery__item a img:hover {
+  filter: opacity(0.9); }
+
+.galeria {
+  margin-top: 2rem; }
 
 /*formulario contacto*/
 .bd {
