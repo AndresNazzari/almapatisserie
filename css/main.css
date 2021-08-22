@@ -202,6 +202,19 @@ cursive;*/
     @media only screen and (min-width: 992px) {
       .tarjetasTienda div {
         grid-template-columns: repeat(3, 1fr); } }
+    .tarjetasTienda div article:nth-child(2n+1) {
+      /*background-color: #f3e0e0;*/
+      background: white;
+      background: -moz-linear-gradient(128deg, white 57%, #f3e0e0 100%);
+      background: -webkit-linear-gradient(128deg, white 57%, #f3e0e0 100%);
+      background: linear-gradient(128deg, white 57%, #f3e0e0 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#f3e0e0", GradientType=1); }
+    .tarjetasTienda div article:nth-child(2n) {
+      background: white;
+      background: -moz-linear-gradient(128deg, white 57%, #ddf2e9 100%);
+      background: -webkit-linear-gradient(128deg, white 57%, #ddf2e9 100%);
+      background: linear-gradient(128deg, white 57%, #ddf2e9 100%);
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff", endColorstr="#ddf2e9", GradientType=1); }
     .tarjetasTienda div article {
       margin: 1rem;
       border: 1px solid #ccc;
