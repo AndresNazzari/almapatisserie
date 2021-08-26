@@ -35,8 +35,7 @@ h6 {
 /* font-family: 'Roboto', sans-serif; */
 /* font-family: 'Rufina', serif; */
 /*font-family: 'Shadows Into Light', cursive;*/
-/*font-family: 'Permanent Marker',
-cursive;*/
+/*font-family: 'Permanent Marker', cursive;*/
 @font-face {
   font-family: samantha;
   src: url("../font/samantha.ttf") format("truetype"); }
@@ -112,14 +111,47 @@ cursive;*/
 .navegacion {
   background-color: whitesmoke; }
 
-.navegacion__link {
-  font-family: "samantha", true-type; }
+.nav-item {
+  align-items: center;
+  justify-content: center; }
 
-.navegacion__link--color {
+.nav-item a {
+  position: relative;
+  width: 150px;
+  height: 3rem;
+  padding: 15px 0 10px 0 !important;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s;
   color: #b17e20 !important; }
 
+.nav-item a:hover {
+  color: #b17e20 !important; }
+
+.nav-item a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: url(../assets/img/brush/brush1.png);
+  opacity: 0.4;
+  background-size: cover;
+  transform-origin: left;
+  transition: 0.5s; }
+
+.nav-item a:hover:before {
+  width: 100%; }
+
+.nav-item a span {
+  position: relative;
+  z-index: 1;
+  font-family: "samantha" !important; }
+
 .navegacion__logo {
-  width: 150px; }
+  width: 200px; }
 
 .navegacion__logo--margen {
   margin-top: 1rem; }
@@ -236,7 +268,6 @@ cursive;*/
 
 #contact_container #contact_form form {
   margin-top: 40px;
-  /*position: relative;*/
   margin: auto;
   width: 90%;
   height: 100%; }
