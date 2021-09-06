@@ -77,7 +77,8 @@
             </div>
         </nav>
     </div>
-    <!--- Menu de navegacion-->
+    <!--- Fin Menu de navegacion-->
+
     <main>
         <!--- Inicia Carrousel-->
         <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -130,10 +131,8 @@
                     todos nuestros productos visitando nuestra tienda
                 </h3>
             </div>
-            <div class="row ">
-                <h4 class="col text-center my-2 banner__boton"><a class="p-2 rounded-pill bg-warning"
-                        href="./views/tienda.html">Tienda</a>
-                </h4>
+            <div class="goTienda d-flex justify-content-center align-items-center">
+                <button class="learn-more" onclick="location.href='./views/tienda.html'">Ver Productos</button>
             </div>
         </div>
         <!--- fin Banner -->
@@ -265,16 +264,30 @@
                 <div class="col-4 order-3"></div>
             </div>
         </div>
-
+        <!--- Redes -->
         <div class="footer__redes">
-            <a href="https://www.instagram.com/alma.patisserie/" target="_blank"><i
-                    class="fab fa-instagram footer__iconos"></i></a>
-            <a href="#"><i class="fab fa-facebook-square footer__iconos"></i></a>
-            <a href="https://api.whatsapp.com/send?phone=5491133716173&text=hola,%20quería%20consultarte%20por..."
-                target="_blank"><i class="fab fa-whatsapp footer__iconos"></i></a>
+            <ul>
+                <a href="">
+                    <li class="twiter"><i class="fab fa-twitter"></i></li>
+                </a>
+                <a href="https://www.instagram.com/alma.patisserie/" target="_blank">
+                    <li class="insta"><i class="fab fa-instagram"></i></li>
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=5491133716173&text=hola,%20quería%20consultarte%20por..."
+                    target="_blank">
+                    <li class="whats"><i class="fab fa-whatsapp"></i></li>
+                </a>
+                <a href="#">
+                    <li class="facebook"><i class="fab fa-facebook"></i></li>
+                </a>
+            </ul>
+
         </div>
+        <!--- Fin Redes -->
+
     </footer>
     <!--- Fin Footer -->
+
 
     <!--- Creditos -->
     <div class="creditos creditos--padding container-fluid">

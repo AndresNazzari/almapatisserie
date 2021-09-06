@@ -36,6 +36,7 @@ h6 {
 /* font-family: 'Rufina', serif; */
 /*font-family: 'Shadows Into Light', cursive;*/
 /*font-family: 'Permanent Marker', cursive;*/
+/*nunito rubik montserrat (spotify)*/
 @font-face {
   font-family: samantha;
   src: url("../font/samantha.ttf") format("truetype"); }
@@ -50,7 +51,8 @@ h6 {
   background-color: whitesmoke; }
 
 .banner--padding {
-  padding-bottom: 1rem; }
+  padding-top: 2rem;
+  padding-bottom: 2rem; }
 
 .banner__imagen {
   background-image: url("../assets/img/beater.svg"); }
@@ -71,6 +73,48 @@ h6 {
 .banner__texto--color {
   color: #b17e20; }
 
+.goTienda button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer; }
+  .goTienda button.learn-more {
+    font-family: "samantha";
+    font-weight: 600;
+    color: #b17e20;
+    text-transform: uppercase;
+    padding: 0.75rem 0.75rem;
+    background: #fff0f0;
+    border: 2px solid #b18597;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1); }
+    .goTienda button.learn-more::before {
+      position: absolute;
+      content: '';
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: #f9c4d2;
+      border-radius: inherit;
+      box-shadow: 0 0 0 2px #b18597, 0 0.625em 0 0 #ffe3e2;
+      transform: translate3d(0, 0.75em, -1em);
+      transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1); }
+    .goTienda button.learn-more:hover {
+      background: #ffe9e9;
+      transform: translate(0, 0.25em); }
+      .goTienda button.learn-more:hover::before {
+        box-shadow: 0 0 0 2px #b18597, 0 0.5em 0 0 #ffe3e2;
+        transform: translate3d(0, 0.5em, -1em); }
+    .goTienda button.learn-more:active {
+      background: #ffe9e9;
+      transform: translate(0em, 0.75em); }
+      .goTienda button.learn-more:active::before {
+        box-shadow: 0 0 0 2px #b18597, 0 0 #ffe3e2;
+        transform: translate3d(0, 0, -1em); }
+
 .tarjetasIndex__titulo {
   text-align: center; }
 
@@ -82,15 +126,6 @@ h6 {
 
 .tarjetasIndex__texto--color {
   color: black; }
-
-.dondeEstamos {
-  background-color: whitesmoke;
-  font-family: "samantha", true-type; }
-
-.dondeEstamos__parrafo {
-  font-family: 'Rufina', true-type;
-  text-align: center !important;
-  color: grey; }
 
 /*MINI GALERIA INDEX*/
 #galeria {
@@ -231,7 +266,6 @@ h6 {
   margin: 0 auto; }
 
 .gallery__item a img {
-  width: auto;
   object-fit: cover;
   margin-bottom: 1.5rem;
   border-radius: 15px;
@@ -243,6 +277,15 @@ h6 {
 
 .galeria {
   margin-top: 2rem; }
+
+.dondeEstamos {
+  background-color: whitesmoke;
+  font-family: "samantha", true-type; }
+
+.dondeEstamos__parrafo {
+  font-family: 'Rufina', true-type;
+  text-align: center !important;
+  color: grey; }
 
 /*formulario contacto*/
 .bd {
@@ -427,12 +470,6 @@ h6 {
         margin-right: auto;
         border-radius: 10%; }
 
-/*CSS FOOTER, es el mismo para todas las paginas*/
-.footer {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  margin-top: 10vh; }
-
 .footer__logo {
   grid-column: 1/4;
   background-image: url("../img/logo.png"); }
@@ -450,14 +487,50 @@ h6 {
   font-size: 2rem; }
 
 .footer__redes {
-  text-align: center;
-  grid-column: 1/4; }
-
-.footer__iconos {
-  color: #575757;
-  font-size: 2.5rem;
-  padding-left: 1vw;
-  padding-right: 1vw; }
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  .footer__redes ul {
+    position: relative;
+    display: flex;
+    padding: 0; }
+    .footer__redes ul a {
+      text-decoration: none; }
+      .footer__redes ul a li {
+        position: relative;
+        list-style: none;
+        margin: 0 .75rem;
+        cursor: pointer; }
+        .footer__redes ul a li .fab {
+          font-size: 1.5rem;
+          color: #222; }
+        .footer__redes ul a li::before {
+          font-family: "Font Awesome 5 Brands" !important;
+          position: absolute;
+          top: -6px;
+          left: 0;
+          font-size: 1.5rem;
+          height: 6px;
+          overflow: hidden;
+          transition: 0.5s ease-in-out; }
+        .footer__redes ul a li.twiter::before {
+          content: '\f099';
+          color: #1da1f2;
+          border-bottom: 2px solid #1da1f2; }
+        .footer__redes ul a li.insta::before {
+          content: '\f16d';
+          color: #e1306c;
+          border-bottom: 2px solid #e1306c; }
+        .footer__redes ul a li.whats::before {
+          content: '\f232';
+          color: #25d366;
+          border-bottom: 2px solid #25d366; }
+        .footer__redes ul a li.facebook::before {
+          content: '\f09a';
+          color: #006AFF;
+          border-bottom: 2px solid #006AFF; }
+        .footer__redes ul a li:hover::before {
+          height: 120%; }
 
 .footer__contacto {
   font-family: "Butterfly kids";
