@@ -3,9 +3,10 @@ const mockImgGalleryPath = 'assets/mock/gallery_images.json'
 const GalleryImgFullPath = 'assets/img/gallery/fullscreen/'
 const GalleryImgW328Path = 'assets/img/gallery/w328/'
 
+const imagenes = document.querySelector('.imagenes');
+
 window.onload = getImagenes();
 
-const imagenes = document.querySelector('.imagenes');
 
 function getImagenes() {
     fetch(`${serverURL}${mockImgGalleryPath}`).then((res) => res.json()).then((data) => printImagenes(data));
