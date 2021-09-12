@@ -486,6 +486,22 @@ h6 {
   font-family: "Butterfly kids";
   font-size: 2rem; }
 
+.footer__contacto {
+  font-family: "Butterfly kids";
+  font-size: 1.5rem;
+  margin-left: 2rem;
+  text-align: center;
+  margin: 0rem; }
+  @media only screen and (min-width: 768px) {
+    .footer__contacto {
+      text-align: start;
+      font-size: 1.25rem;
+      margin: 1.5rem; } }
+  @media only screen and (min-width: 1024px) {
+    .footer__contacto {
+      font-size: 1.5rem;
+      margin: 2rem; } }
+
 .footer__redes {
   display: flex;
   justify-content: center;
@@ -531,16 +547,6 @@ h6 {
           border-bottom: 2px solid #006AFF; }
         .footer__redes ul a li:hover::before {
           height: 120%; }
-
-.footer__contacto {
-  font-family: "Butterfly kids";
-  font-size: 1.5rem;
-  margin-left: 2rem;
-  text-align: center;
-  margin: 0; }
-  @media only screen and (min-width: 768px) {
-    .footer__contacto {
-      text-align: start; } }
 
 .creditos {
   background-color: rgba(128, 128, 128, 0.582); }
