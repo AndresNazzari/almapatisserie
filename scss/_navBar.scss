@@ -1,0 +1,63 @@
+.navegacion {
+    background-color: whitesmoke;
+}
+
+.nav-item {
+    align-items: center;
+    justify-content: center;
+
+}
+
+.nav-item a {
+    position: relative;
+    width: 150px;
+    height: 3rem;
+    padding: 15px 0 10px 0 !important;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    color: $colorAlma !important;
+
+}
+
+.nav-item a:hover {
+    color: $colorAlma !important;
+}
+
+.nav-item a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: url(../assets/img/brush/brush1.png);
+    opacity: 0.4;
+    background-size: cover;
+    transform-origin: left;
+    transition: 0.5s;
+}
+
+.nav-item a:hover:before {
+    width: 100%;
+}
+
+.nav-item a span {
+    position: relative;
+    z-index: 1;
+    font-family: $fontAlma !important;
+}
+
+
+.navegacion__logo {
+    width: 200px;
+}
+
+.navegacion__logo--margen {
+    margin-top: 1rem;
+}
+
+.navegacion__hamb--color {
+    color: $colorAlma !important;
+}

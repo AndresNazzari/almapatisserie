@@ -1,0 +1,108 @@
+.footer__logo {
+    grid-column: 1/4;
+    background-image: url("../img/logo.png");
+
+}
+
+.footer__logo--tamaño {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 150px;
+}
+
+.footer__frase {
+    text-align: center;
+    margin: auto;
+    font-family: "Butterfly kids";
+    font-size: 2rem;
+}
+
+.footer__contacto {
+    font-family: "Butterfly kids";
+    font-size: 1.5rem;
+    margin-left: 2rem;
+    text-align: center;
+    margin: 0rem;
+
+    @media only screen and (min-width: 768px) {
+        text-align: start;
+        font-size: 1.25rem;
+        margin: 1.5rem;
+    }
+
+    @media only screen and (min-width: 1024px) {
+        font-size: 1.5rem;
+        margin: 2rem;
+    }
+
+}
+
+.footer__redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    ul {
+        position: relative;
+        display: flex;
+        padding: 0;
+
+        a {
+            text-decoration: none;
+
+            li {
+                position: relative;
+                list-style: none;
+                margin: 0 .75rem;
+                cursor: pointer;
+
+                .fab {
+                    font-size: 1.5rem;
+                    color: grey;
+                }
+
+                &::before {
+                    font-family: "Font Awesome 5 Brands" !important;
+                    position: absolute;
+                    top: -6px;
+                    left: 0;
+                    font-size: 1.5rem;
+                    height: 6px;
+                    overflow: hidden;
+                    transition: 0.5s ease-in-out;
+                }
+
+                &.twiter::before {
+                    content: '\f099';
+                    color: #1da1f2;
+                    border-bottom: 2px solid #1da1f2;
+                }
+
+                &.insta::before {
+                    content: '\f16d';
+                    color: #e1306c;
+                    border-bottom: 2px solid #e1306c;
+                }
+
+                &.whats::before {
+                    content: '\f232';
+                    color: #25d366;
+                    border-bottom: 2px solid #25d366;
+                }
+
+                &.facebook::before {
+                    content: '\f09a';
+                    color: #006AFF;
+                    border-bottom: 2px solid #006AFF;
+                }
+
+                &:hover::before {
+                    height: 120%;
+                }
+            }
+
+
+        }
+    }
+}

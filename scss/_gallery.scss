@@ -1,0 +1,26 @@
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 328px);
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.gallery__item {
+    a {
+        img {
+            object-fit: cover;
+            margin-bottom: 1.5rem;
+            border-radius: 15px;
+            background-color: lightgrey;
+            cursor: zoom-in;
+        }
+
+        img:hover {
+            filter: opacity(0.9);
+        }
+    }
+}
+
+.galeria {
+    margin-top: 2rem;
+}

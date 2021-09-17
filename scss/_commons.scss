@@ -1,0 +1,20 @@
+//variables
+
+$colorAlma: rgb(177, 126, 32);
+$fontAlma: 'samantha';
+$light-pink: #fff0f0;
+$pink: #ffe9e9;
+$dark-pink: #f9c4d2;
+$pink-border: #b18597;
+$pink-shadow: #ffe3e2;
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-family: $fontAlma;
+        color: $colorAlma;
+    }
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
