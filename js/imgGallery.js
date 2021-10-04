@@ -7,7 +7,6 @@ const imagenes = document.querySelector('.imagenes');
 
 window.onload = getImagenes();
 
-
 function getImagenes() {
     fetch(`${serverURL}${mockImgGalleryPath}`).then((res) => res.json()).then((data) => printImagenes(data));
 }
