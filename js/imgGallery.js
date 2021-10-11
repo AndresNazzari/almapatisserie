@@ -1,4 +1,4 @@
-const serverURL = 'https://www.almapatisserie.com.ar/'
+const serverURL = 'http://127.0.0.1:5501/'   //'https://www.almapatisserie.com.ar/'
 const mockImgGalleryPath = 'assets/mock/gallery_images.json'
 const GalleryImgFullPath = 'assets/img/gallery/fullscreen/'
 const GalleryImgW328Path = 'assets/img/gallery/w328/'

@@ -65,7 +65,7 @@
                         </li>
                         <li class="nav-item mx-auto">
                             <a class="nav-link active fw-bold fs-5 m-2" aria-current="page"
-                                href="https://pency.app/almapatisserie" target="_blank"><span>Tienda</a></span>
+                                href="../views/tienda.html"><span>Tienda</a></span>
                         </li>
                         <li class="nav-item mx-auto">
                             <a class="nav-link active fw-bold fs-5 m-2" aria-current="page"
@@ -94,7 +94,7 @@
                     <div>
                         <h3>Smash con bombones y chocolates</h3>
                         <p>Corazón y base de chocolate blanco / semiamargo o con leche</p>
-                        <input type="button" value="Mas detalles">
+                        <input type="button" value="Mas detalles" data-bs-toggle="modal" data-bs-target="#modal1">
                     </div>
                 </article>
                 <article class="tarjeta">
@@ -230,6 +230,29 @@
                 </article>
             </div>
         </section>
+
+        <!--- modales-->
+        <!---<section>
+            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Smash con Bombones y Chocolates</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            ...
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                            <button type="button" class="btn btn-primary">Agrgegar al Carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>-->
+        <!--- fin modales-->
+
         <div class="container-fluid row justify-content-center">
             <div class="col-8  m-4 separador">
             </div>
@@ -315,6 +338,31 @@
         </div>
     </div>
     <!--- Fin Creditos -->
+
+
+    <div class="container-fluid carrito fixed-bottom">
+        <div class="row shoppingCartItem">
+            <div class="col-6">
+                <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                    <img src="../assets/img/smash.PNG" class="shopping-cart-image">
+                    <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">
+                        Smash</h6>
+                </div>
+            </div>
+            <div class="col-2">
+                <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
+                    <p class="item-price mb-0 shoppingCartItemPrice">$1500</p>
+                </div>
+            </div>
+            <div class="col-4">
+                <div
+                    class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
+                    <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
+                    <button class="btn btn-danger buttonDelete" type="button">X</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
