@@ -9,9 +9,3 @@ new Splide('.splide', {
     }
 }).mount();
 
-lightbox.option({
-    'resizeDuration': 200,
-    'showImageNumberLabel': false,
-    'wrapAround': true
-})
-
