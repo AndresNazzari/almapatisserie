@@ -1,0 +1,146 @@
+[
+    {
+        "titulo": "Smash con bombones y chocolates dentro",
+        "descripcion_corta": "Corazón y base de chocolate blanco / semiamargo o con leche",
+        "descripcion": "Corazón de chocolate con base también de chocolate, mide 19 cm. Viene con martillo para romperlo y golosinas en su interior Golosinas: Rocklets sueltos 2 bon o bon 2 oreos bañadas 2 bombones rellenos de nutella 2 bombones rellenos de dulce de leche 4 chocolatines (Alguna de las golosinas puede cambiar por otra si no hay stock) Colores a elección (pueden ser uno o dos): Rojo, rosa, violeta, lila, verde. amarillo, azul, celeste, blanco, de chocolate semiamargo o con leche. El mensaje es a elección, las letras pueden ser blancas o doradas. Presentado en caja con visor y martillo",
+        "precio": "1700",
+        "imagen": "smash.PNG",
+        "alt": "smash",
+        "categoria": "chocolates"
+    },
+    {
+        "titulo": "Smash Relleno",
+        "descripcion_corta": "Corazon y base de chocolate blanco / semiamargo o con leche Relleno de chocotorta o choco oreo",
+        "descripcion": "Corazon y base de chocolate blanco/semiamargo o con leche. Relleno de chocotorta o choco oreo. Medida del corazon: 19 cm Decorado con glitter comestible, este corazón no viene con martillo ya que dentro es una torta, tampoco viene con mensaje. Los colores son a elección (hasta dos colores)",
+        "precio": "1800",
+        "imagen": "smash_relleno.PNG",
+        "alt": "smash_relleno",
+        "categoria": "chocolates"
+    },
+    {
+        "titulo": "Box Dulce",
+        "descripcion_corta": "Con alfajores, brownie, tableta y mas!!",
+        "descripcion": "Contiene: * 3 Alfajores grandes de chocolate, dulce de leche y maní * 2 Alfajores medianos de coco y dulce de leche * 2 Bocaditos de brownie bañados en chocolate * 1 Bomba Cappuccino * 1 Tableta de chocolate blanco o negro con oreo, rocklets o maní ",
+        "precio": "950",
+        "imagen": "box.jpg",
+        "alt": "box",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Cheesecake de Chocolate y Naranja",
+        "descripcion_corta": "Base de cookies de chocolate, crema de queso chocolate y naranja",
+        "descripcion": "Base de cookies de chocolate, crema de queso chocolate y naranja, decorado con ganache de chocolate y frutos secos",
+        "precio": "2000",
+        "imagen": "cheese_choconar.jpg",
+        "alt": "cheesecake chocolate naranja",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Chocotorta",
+        "descripcion_corta": "Base de chocolinas, mezcla de queso y dulce de leche.",
+        "descripcion": "Base de chocolinas, mezcla de queso y dulce de leche",
+        "precio": "1500",
+        "imagen": "Chocotorta.jpg",
+        "alt": "Chocotorta",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Lemon Pie",
+        "descripcion_corta": "Lemon pie con cobertura de merengue italiano.",
+        "descripcion": "Lemon pie con cobertura de merengue italiano, tamaño grande (24cm). Rinde de 10 a 12 porciones.",
+        "precio": "1600",
+        "imagen": "lemonpie.jpg",
+        "alt": "lemonpie",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Pavlova con crema",
+        "descripcion_corta": "Base de merengue horneado, capa de dulce de leche y capa de crema chantilly.",
+        "descripcion": "Base de merengue horneado, capa de dulce de leche y capa de crema chantilly. Para decorar fruto rojos y frutillas",
+        "precio": "1500",
+        "imagen": "pablova_crema.jpg",
+        "alt": "pablova con crema",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Pavlova con crema pastelera",
+        "descripcion_corta": "Base de merengue horneado Capa de dulce de leche y capa de crema pastelera.",
+        "descripcion": "Base de merengue horneado. Capa de dulce de leche y capa de crema pastelera. Para decorar frutos rojos y frutillas",
+        "precio": "1500",
+        "imagen": "pablova_pastelera.jpg",
+        "alt": "pablova con pastelera",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Shots de Lemon pie x 12",
+        "descripcion_corta": "Docena de shots de lemon pie",
+        "descripcion": "Shots de Lemon pie x 12",
+        "precio": "1400",
+        "imagen": "shoot_lemon.jpg",
+        "alt": "Shots de Lemon pie",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Shots Variados x 12",
+        "descripcion_corta": "Docena de shots variados",
+        "descripcion": "Docena de shots. 2 sabores a elección dentro de la docena. Sabores: -Chocotorta -Torta oreo -Cheesecake",
+        "precio": "1400",
+        "imagen": "shootsx12.jpg",
+        "alt": "shots variados",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Torta Helada Oreo",
+        "descripcion_corta": "Base de oreos, capa de dulce de leche, mezcla de cremas sabor vainilla",
+        "descripcion": "Base de oreos, capa de dulce de leche, mezcla de cremas sabor vainilla, decorada con oreos y dulce de leche.",
+        "precio": "1900",
+        "imagen": "torta_helada_oreo.jpg",
+        "alt": "torta helada oreo",
+        "categoria": "postres"
+    },
+    {
+        "titulo": "Brownie",
+        "descripcion_corta": "Masa de brownie con nueces, capa de dulce de leche",
+        "descripcion": "Masa de brownie con nueces. Capa de dulce de leche. Coberturas: Merengue/Crema. Deco: Oreos bañadas o frutos rojos",
+        "precio": "1700",
+        "imagen": "brownie.jpg",
+        "alt": "Brownie",
+        "categoria": "tortas"
+    },
+    {
+        "titulo": "Brownie Personalizado",
+        "descripcion_corta": "Brownie Oreo con elección de color",
+        "descripcion": "Brownie Oreo con elección de color. Base de brownie, capa de dulce de leche y capa de merengue italiano o crema chantilly. El color de las oreos es a elección (hasta dos colores)",
+        "precio": "1700",
+        "imagen": "brownie_perso.jpg",
+        "alt": "Brownie Personalizado",
+        "categoria": "tortas"
+    },
+    {
+        "titulo": "Cheescake New York",
+        "descripcion_corta": "Cheesecake horneado con mermelada de frutilla y frutos rojos",
+        "descripcion": "Cheesecake horneado con mermelada de frutilla y frutos rojos",
+        "precio": "2000",
+        "imagen": "cheesecake_newyork.jpg",
+        "alt": "Cheescake New York",
+        "categoria": "tortas"
+    },
+    {
+        "titulo": "Lettercake",
+        "descripcion_corta": "Masa de cookie sabor a elección (vainilla/chocolate/vainilla y chips)",
+        "descripcion": "Masa de cookie sabor a elección (vainilla/chocolate/vainilla y chips). Relleno de dulce de leche y cobertura de merengue italiano/chocotorta/crema oreo. Medida 25 cm aprox. Opciones de coberturas: cobertura chocotorta, cobertura crema oreo o cobertura merengue italiano.",
+        "precio": "1600",
+        "imagen": "letterM.jpg",
+        "alt": "Lettercake",
+        "categoria": "tortas"
+    },
+    {
+        "titulo": "Numbercake",
+        "descripcion_corta": "Masa de cookie sabor a elección (vainilla/chocolate/vainilla y chips)",
+        "descripcion": "Masa de cookie sabor a elección (vainilla/chocolate/vainilla y chips). Relleno de dulce de leche y cobertura de merengue italiano/chocotorta/crema oreo. Medida 25 cm aprox. Opciones de coberturas: cobertura chocotorta, cobertura oreo o cobertura merengue italiano.",
+        "precio": "1600",
+        "imagen": "numbercake.jpg",
+        "alt": "numbercake",
+        "categoria": "tortas"
+    }
+]

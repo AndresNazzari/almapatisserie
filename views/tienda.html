@@ -9,7 +9,6 @@
     <meta name="description" content="Tienda online de Alma Patisserie. Se retira unicamente por lomas de zamora.">
     <meta name="keywords"
         content="Pastelería, IAG, Alma,patisserie, lomas, box, brownie, oreo, nutella, ferrero, golosinas, frutos, cheesecake, postre, lemon pie, dulce de leche, bomba, cookies, merienda, number, letter, numbercake, lettercake">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="../css/bootstrap.css">
     <!-- Mi CSS -->
@@ -20,15 +19,7 @@
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="../css/lightbox.css">
     <link rel="shortcut icon" href="../assets/img/favicon-32x32.png">
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNC0ZYL442"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
 
-        gtag('config', 'G-DNC0ZYL442');
-    </script>
 
 </head>
 
@@ -76,8 +67,9 @@
             </div>
         </nav>
     </div>
-    <!--- Menu de navegacion-->
+    <!--- Fin Menu de navegacion-->
 
+    <!---  Titulo-->
     <div class="container-fluid py-3" id="nuestrosProductos">
         <div class="row align-items-center justify-content-center">
             <h3 class="col-12 text-center fs-1 fw-bold mb-3">
@@ -85,9 +77,214 @@
             </h3>
         </div>
     </div>
+    <!--- Titulo-->
 
+    <!--- Tarjetas de Productos -->
     <main>
-        <section class="tarjetasTienda">
+        <section class="tarjetasTienda" id="tarjetasContainer">
+            <!--- el contenido se carga con JS -->
+        </section>
+    </main>
+    <!--- Fin Tarjetas de Productos -->
+
+    <!---  Separador-->
+    <div class="container-fluid row justify-content-center">
+        <div class="col-8  m-4 separador">
+        </div>
+    </div>
+    <!--- Fin Separador-->
+
+
+    <!--- Carrito -->
+    <!-- START SECTION SHOPPING CART -->
+    <section class="shopping-cart d-none">
+        <div class="container">
+            <h3 class="text-center">CARRITO</h3>
+            <hr>
+            <div class="row">
+                <div class="col-6">
+                    <div class="shopping-cart-header">
+                        <h6>Producto</h6>
+                    </div>
+                </div>
+                <div class="col-2">
+                    <div class="shopping-cart-header">
+                        <h6 class="text-truncate">Precio</h6>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="shopping-cart-header">
+                        <h6>Cantidad</h6>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ? START SHOPPING CART ITEMS -->
+            <div class="shopping-cart-items shoppingCartItemsContainer">
+            </div>
+            <!-- ? END SHOPPING CART ITEMS -->
+        </div>
+
+
+        <!-- START TOTAL -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-cart-total d-flex align-items-center">
+                        <p class="mb-0">Total</p>
+                        <p class="ms-4 mb-0 shoppingCartTotal">$0</p>
+
+                        <!--
+                        <div class="toast ms-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
+                            data-delay="2000">
+                            <div class="toast-header">
+                                <span>✅</span>
+                                <strong class="me-auto ms-1 text-secondary">Elemento en el carrito</strong>
+                                <small>11 mins ago</small>
+                                <button type="button" class="ms-2 mb-1 close" data-dismiss="toast" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
+                            <div class="toast-body text-white">
+                                Se aumentó correctamente la cantidad
+                            </div>
+                        </div>
+                            -->
+                        <button type="button" class="btn btn-success ms-auto" id="comprarButton">
+                            Comprar
+                        </button>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END TOTAL -->
+
+
+
+
+        <!---  Separador-->
+        <div class="container-fluid row justify-content-center">
+            <div class="col-8  m-4 separador">
+            </div>
+        </div>
+        <!--- Fin Separador-->
+    </section>
+
+
+    <!-- END SECTION SHOPPING CART -->
+    <!--- Fin Carrito -->
+
+
+    <!--- Footer -->
+    <footer>
+        <div class="container-fluid">
+            <div class="row justify-content-center align-items-center">
+                <div class="col-12 col-md-4 order-0">
+                    <a href="../index.html">
+                        <div class="footer__logo footer__logo--tamaño">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4 order-2 order-md-1 my-4 my-md-0">
+                    <p class="footer__contacto">
+                        Alma Patisserie - Pastelería <br>
+                        Soy Jose, Pastelería por encargo<br>
+                        Las Lomitas<br>
+                    </p>
+                </div>
+                <h5 class="col-12 col-md-4 align-items-center order-1 order-md-2 footer__frase">
+                    La receta justa para hacerte sonreir
+                </h5>
+                <div class="col-4 order-3"></div>
+            </div>
+        </div>
+    </footer>
+    <!--- Fin Footer -->
+
+    <!--- Redes -->
+    <div class="footer__redes">
+        <ul>
+            <a href="">
+                <li class="twiter"><i class="fab fa-twitter"></i></li>
+            </a>
+            <a href="https://www.instagram.com/alma.patisserie/" target="_blank">
+                <li class="insta"><i class="fab fa-instagram"></i></li>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=5491133716173&text=hola,%20quería%20consultarte%20por..."
+                target="_blank">
+                <li class="whats"><i class="fab fa-whatsapp"></i></li>
+            </a>
+            <a href="#">
+                <li class="facebook"><i class="fab fa-facebook"></i></li>
+            </a>
+        </ul>
+
+    </div>
+    <!--- Fin Redes -->
+
+    <!--- Creditos -->
+    <div class="creditos creditos--padding container-fluid">
+        <div class="row">
+            <div
+                class="creditos__texto creditos__texto--color col-12 col-md-6 text-center text-md-start justify-content-center">
+                <p class="d-inline-block"> Made with</p>
+                <i class="fas fa-heart typ "></i>
+                <p class="d-inline-block">&</p>
+                <i class="fas fa-mug-hot typ "></i>
+                <p class="d-inline-block">in Buenos Aires by</p>
+                <a href="https://github.com/AndresNazzari" target="_blank""
+                            class=" creditos__texto creditos__texto--color creditos__enlace--decoracion
+                    creditos__enlace--hover">
+                    <i class="fab fa-dev typ "></i>
+                </a>
+            </div>
+            <div class="col-12 col-md-6 text-center text-md-end">
+                <a href="#"
+                    class="creditos__texto creditos__texto--color creditos__enlace--decoracion creditos__enlace--hover">
+                    <i class="fas fa-balance-scale"></i>
+                    <p class="d-inline-block">Terms</p>
+                </a>
+                <p class="d-inline-block">+</p>
+                <a href="#"
+                    class="creditos__texto creditos__texto--color creditos__enlace--decoracion creditos__enlace--hover">
+                    <p class="d-inline-block"> Privacy</p>
+                    <i class="fas fa-user-secret"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!--- Fin Creditos -->
+
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNC0ZYL442"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-DNC0ZYL442');
+    </script>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!-- Lightbox Script -->
+    <script src="../js/lightbox-plus-jquery.min.js"></script>
+    <!-- Sweet Alert -->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- MI Script -->
+    <script src="../js/tienda.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!---
             <div>
                 <article class="tarjeta">
                     <img src="../assets/img/smash.PNG" alt="smash">
@@ -229,149 +426,4 @@
                     </div>
                 </article>
             </div>
-        </section>
-
-        <!--- modales-->
-        <!---<section>
-            <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="exampleModalLabel">Smash con Bombones y Chocolates</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            ...
-                        </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
-                            <button type="button" class="btn btn-primary">Agrgegar al Carrito</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>-->
-        <!--- fin modales-->
-
-        <div class="container-fluid row justify-content-center">
-            <div class="col-8  m-4 separador">
-            </div>
-        </div>
-    </main>
-
-    <!--- Footer -->
-    <footer>
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-12 col-md-4 order-0">
-                    <a href="../index.html">
-                        <div class="footer__logo footer__logo--tamaño">
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-4 order-2 order-md-1 my-4 my-md-0">
-                    <p class="footer__contacto">
-                        Alma Patisserie - Pastelería <br>
-                        Soy Jose, Pastelería por encargo<br>
-                        Las Lomitas<br>
-                    </p>
-                </div>
-                <h5 class="col-12 col-md-4 align-items-center order-1 order-md-2 footer__frase">
-                    La receta justa para hacerte sonreir
-                </h5>
-                <div class="col-4 order-3"></div>
-            </div>
-        </div>
-    </footer>
-    <!--- Fin Footer -->
-    <!--- Redes -->
-    <div class="footer__redes">
-        <ul>
-            <a href="">
-                <li class="twiter"><i class="fab fa-twitter"></i></li>
-            </a>
-            <a href="https://www.instagram.com/alma.patisserie/" target="_blank">
-                <li class="insta"><i class="fab fa-instagram"></i></li>
-            </a>
-            <a href="https://api.whatsapp.com/send?phone=5491133716173&text=hola,%20quería%20consultarte%20por..."
-                target="_blank">
-                <li class="whats"><i class="fab fa-whatsapp"></i></li>
-            </a>
-            <a href="#">
-                <li class="facebook"><i class="fab fa-facebook"></i></li>
-            </a>
-        </ul>
-
-    </div>
-    <!--- Fin Redes -->
-    <!--- Creditos -->
-    <div class="creditos creditos--padding container-fluid">
-        <div class="row">
-            <div
-                class="creditos__texto creditos__texto--color col-12 col-md-6 text-center text-md-start justify-content-center">
-                <p class="d-inline-block"> Made with</p>
-                <i class="fas fa-heart typ "></i>
-                <p class="d-inline-block">&</p>
-                <i class="fas fa-mug-hot typ "></i>
-                <p class="d-inline-block">in Buenos Aires by</p>
-                <a href="https://github.com/AndresNazzari" target="_blank""
-                            class=" creditos__texto creditos__texto--color creditos__enlace--decoracion
-                    creditos__enlace--hover">
-                    <i class="fab fa-dev typ "></i>
-                </a>
-            </div>
-            <div class="col-12 col-md-6 text-center text-md-end">
-                <a href="#"
-                    class="creditos__texto creditos__texto--color creditos__enlace--decoracion creditos__enlace--hover">
-                    <i class="fas fa-balance-scale"></i>
-                    <p class="d-inline-block">Terms</p>
-                </a>
-                <p class="d-inline-block">+</p>
-                <a href="#"
-                    class="creditos__texto creditos__texto--color creditos__enlace--decoracion creditos__enlace--hover">
-                    <p class="d-inline-block"> Privacy</p>
-                    <i class="fas fa-user-secret"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-    <!--- Fin Creditos -->
-
-
-    <div class="container-fluid carrito fixed-bottom">
-        <div class="row shoppingCartItem">
-            <div class="col-6">
-                <div class="shopping-cart-item d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                    <img src="../assets/img/smash.PNG" class="shopping-cart-image">
-                    <h6 class="shopping-cart-item-title shoppingCartItemTitle text-truncate ml-3 mb-0">
-                        Smash</h6>
-                </div>
-            </div>
-            <div class="col-2">
-                <div class="shopping-cart-price d-flex align-items-center h-100 border-bottom pb-2 pt-3">
-                    <p class="item-price mb-0 shoppingCartItemPrice">$1500</p>
-                </div>
-            </div>
-            <div class="col-4">
-                <div
-                    class="shopping-cart-quantity d-flex justify-content-between align-items-center h-100 border-bottom pb-2 pt-3">
-                    <input class="shopping-cart-quantity-input shoppingCartItemQuantity" type="number" value="1">
-                    <button class="btn btn-danger buttonDelete" type="button">X</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-    <!-- Splide Script -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-    <!-- MI Script -->
-    <script src="../js/tienda.js"></script>
-</body>
-
-</html>
+            -->
