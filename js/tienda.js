@@ -15,7 +15,7 @@ class productoEnCarrito {
 /**************************************************************
 *        VARIABLES Y CONSTANTES
 ***************************************************************/
-const serverURL = 'http://127.0.0.1:5501/'   //'https://www.almapatisserie.com.ar/'
+const serverURL = '../'   //'https://www.almapatisserie.com.ar/'
 const mockImgTiendaPath = 'assets/mock/tienda.json'
 const tiendaImgFullPath = 'assets/img/tienda/'
 const tarjetasContainer = document.querySelector('.tarjetasTienda');
