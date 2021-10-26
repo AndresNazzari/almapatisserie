@@ -96,15 +96,14 @@
 
 
     <!--- Carrito -->
-    <!-- START SECTION SHOPPING CART -->
     <section class="shopping-cart d-none">
         <div class="container">
-            <h3 class="text-center">CARRITO</h3>
+            <h3 class="text-center">Productos Seleccionados</h3>
             <hr>
             <div class="row">
                 <div class="col-6">
                     <div class="shopping-cart-header">
-                        <h6>Producto</h6>
+                        <h6>Descripcion</h6>
                     </div>
                 </div>
                 <div class="col-2">
@@ -125,43 +124,21 @@
             <!-- ? END SHOPPING CART ITEMS -->
         </div>
 
-
         <!-- START TOTAL -->
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="shopping-cart-total d-flex align-items-center">
+                    <div class="shoppingCartTotalContainer d-flex align-items-center">
                         <p class="mb-0">Total</p>
                         <p class="ms-4 mb-0 shoppingCartTotal">$0</p>
-
-                        <!--
-                        <div class="toast ms-auto bg-info" role="alert" aria-live="assertive" aria-atomic="true"
-                            data-delay="2000">
-                            <div class="toast-header">
-                                <span>✅</span>
-                                <strong class="me-auto ms-1 text-secondary">Elemento en el carrito</strong>
-                                <small>11 mins ago</small>
-                                <button type="button" class="ms-2 mb-1 close" data-dismiss="toast" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
-                            </div>
-                            <div class="toast-body text-white">
-                                Se aumentó correctamente la cantidad
-                            </div>
-                        </div>
-                            -->
                         <button type="button" class="btn btn-success ms-auto" id="comprarButton">
                             Comprar
                         </button>
-
                     </div>
                 </div>
             </div>
         </div>
         <!-- END TOTAL -->
-
-
-
 
         <!---  Separador-->
         <div class="container-fluid row justify-content-center">
@@ -170,11 +147,7 @@
         </div>
         <!--- Fin Separador-->
     </section>
-
-
-    <!-- END SECTION SHOPPING CART -->
     <!--- Fin Carrito -->
-
 
     <!--- Footer -->
     <footer>
@@ -259,6 +232,7 @@
     <!--- Fin Creditos -->
 
 
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-DNC0ZYL442"></script>
     <script>
@@ -275,155 +249,10 @@
     <script src="../js/lightbox-plus-jquery.min.js"></script>
     <!-- Sweet Alert -->
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- jQuery -->
+    <script src="../js/jquery-3.6.0.min.js"></script>
     <!-- MI Script -->
     <script src="../js/tienda.js"></script>
 </body>
 
 </html>
-
-
-
-
-<!---
-            <div>
-                <article class="tarjeta">
-                    <img src="../assets/img/smash.PNG" alt="smash">
-                    <div>
-                        <h3>Smash con bombones y chocolates</h3>
-                        <p>Corazón y base de chocolate blanco / semiamargo o con leche</p>
-                        <input type="button" value="Mas detalles" data-bs-toggle="modal" data-bs-target="#modal1">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/smash_relleno.PNG" alt="smash_relleno">
-                    <div>
-                        <h3>Smash Relleno</h3>
-                        <p>Corazon y base de chocolate blanco / semiamargo o con leche
-                            Relleno de chocotorta o choco oreo</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/box.jpg" alt="box">
-                    <div>
-                        <h3>Box Dulce</h3>
-                        <p>Con alfajores, brownie, tableta y mas!!</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/cheese_choconar.jpg" alt="cheesecake_chocoñlate_naranja">
-                    <div>
-                        <h3>Cheesecake de Chocolate y Naranja</h3>
-                        <p>Base de cookies de chocolate, crema de queso chocolate y naranja</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/Chocotorta.jpg" alt="Chocotorta">
-                    <div>
-                        <h3>Chocotorta</h3>
-                        <p>Base de chocolinas, mezcla de queso y dulce de leche</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/lemonpie.jpg" alt="lemonpie">
-                    <div>
-                        <h3>Lemon Pie</h3>
-                        <p>Lemon pie con cobertura de merengue italiano</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img//pablova_crema.jpg" alt="pablova_crema">
-                    <div>
-                        <h3>Pavlova con crema</h3>
-                        <p>Base de merengue horneado, capa de dulce de leche y capa de crema chantilly
-                        </p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/pablova_pastelera.jpg" alt="pablova_pastelera">
-                    <div>
-                        <h3>Pavlova con pastelera</h3>
-                        <p>Base de merengue horneado
-                            Capa de dulce de leche y capa de crema pastelera</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/shoot_lemon.jpg" alt="shoot_lemon">
-                    <div>
-                        <h3>Shots de Lemon pie x 12</h3>
-                        <p>Docena de shots de lemon pie</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/shootsx12.jpg" alt="shoot_surtidos">
-                    <div>
-                        <h3>Shots x 12</h3>
-                        <p>Docena de shots surtidos</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/torta_helada_oreo.jpg" alt="torta_helada_oreo">
-                    <div>
-                        <h3>Torta Helada Oreo</h3>
-                        <p>Base de oreos, capa de dulce de leche, mezcla de cremas sabor vainilla</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/babka.jpeg" alt="babka">
-                    <div>
-                        <h3>Babka de chocolate</h3>
-                        <p>Postre típico de la pastelería europea, masa con leudado, trenzada y rellena de chocolate</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/brownie.jpg" alt="brownie">
-                    <div>
-                        <h3>Brownie</h3>
-                        <p>Masa de brownie con nueces, capa de dulce de leche</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/brownie_perso.jpg" alt="Brownie_Personalizado">
-                    <div>
-                        <h3>Brownie Personalizado</h3>
-                        <p>Brownie Oreo con elección de color</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/cheesecake_newyork.jpg" alt="cheesecake_newyork">
-                    <div>
-                        <h3>Cheescake New York</h3>
-                        <p>Cheesecake horneado con mermelada de frutilla y frutos rojos</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/letterM.jpg" alt="Lettercake">
-                    <div>
-                        <h3>Lettercake</h3>
-                        <p>Masa de cookie sabor a elección (vainilla/chocolate/vainilla y chips)</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-                <article class="tarjeta">
-                    <img src="../assets/img/numbercake.jpg" alt="numbercake">
-                    <div>
-                        <h3>Numbercake</h3>
-                        <p>Masa de cookie sabor a elección (vainilla/chocolate/vainilla y chips)</p>
-                        <input type="button" value="Mas detalles">
-                    </div>
-                </article>
-            </div>
-            -->
