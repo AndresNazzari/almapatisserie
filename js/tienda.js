@@ -98,25 +98,6 @@ function addToCartClicked(index) {
         })
         if (index > -1) {
             carrito[index].cantidad = Number(carrito[index].cantidad) + 1
-
-            //swwet alert start
-            const Toast = Swal.mixin({
-                toast: true,
-                position: 'top-end',
-                showConfirmButton: false,
-                timer: 3000,
-                timerProgressBar: true,
-                didOpen: (toast) => {
-                    toast.addEventListener('mouseenter', Swal.stopTimer)
-                    toast.addEventListener('mouseleave', Swal.resumeTimer)
-                }
-            })
-            Toast.fire({
-                icon: 'success',
-                title: 'Producto agregado al carrito'
-            })
-            //swwet alert end
-
         } else {
             carrito.push(producto)
         }
@@ -125,16 +106,34 @@ function addToCartClicked(index) {
         carrito.push(producto)
         localStorage.setItem("carrito", JSON.stringify(carrito))
     }
-
+    //swwet alert start
+    const Toast = Swal.mixin({
+        toast: true,
+        position: 'top-end',
+        showConfirmButton: false,
+        timer: 4000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.addEventListener('mouseenter', Swal.stopTimer)
+            toast.addEventListener('mouseleave', Swal.resumeTimer)
+        }
+    })
+    Toast.fire({
+        icon: 'success',
+        title: 'Producto agregado al carrito'
+    })
+    //swwet alert end
     printCarrito()
 }
 
 
 function printCarrito() { //
     if (localStorage.getItem("carrito") !== null) {
-        $(".shopping-cart").removeClass("d-none")
-        //shoppingCart.classList.remove("d-none")
+        //$(".shopping-cart").removeClass("d-none")
+        $(".shopping-cart").slideDown(1000)
         printShoppingCart() //funcion para imprimir lo que hay en el carrito
+    } else {
+        $(".shopping-cart").slideUp(1)
     }
 }
 
@@ -245,22 +244,23 @@ function removeShoppingCartItem(indice) {
         printShoppingCart()
     } else {
         vaciarCarrito()
-        $(".shopping-cart").addClass("d-none")
+        //$(".shopping-cart").addClass("d-none")
+        $(".shopping-cart").slideUp(1000)
         //shoppingCart.classList.add("d-none")
     }
 }
 
 function comprarButtonClicked() {
-    vaciarCarrito()
-    $(".shopping-cart").addClass("d-none")
     //shoppingCart.classList.add("d-none")
-
     Swal.fire(
         'Gracias por tu compra!!',
         'En pocos minutos recibiras noticias nuestras!',
         'success',
 
     )
+    //$(".shopping-cart").addClass("d-none")
+    $(".shopping-cart").slideUp(1000)
+    vaciarCarrito()
 }
 
 function vaciarCarrito() {
@@ -279,6 +279,18 @@ $("#comprarButton").click(() => {
 })
 //Esto es lo mismo pero sin Jquery
 //document.querySelector("#comprarButton").addEventListener("click", comprarButtonClicked)
+
+$("#mostrarCarrito").click((e) => {
+    $(e.target).parent().slideUp(1000)
+        .delay(100)
+        .slideDown(1000)
+})
+
+$("#actualizaTarjetas").click((e) => {
+    $("main").fadeOut(1000)
+        .delay(100)
+        .fadeIn(1000)
+})
 
 
 //SCRIPT PARA LIGHTBOX
