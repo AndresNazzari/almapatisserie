@@ -310,3 +310,4 @@ lightbox.option({
     'wrapAround': true
 })
 
+alert("hola")
