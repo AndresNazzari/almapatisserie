@@ -309,5 +309,3 @@ lightbox.option({
     'showImageNumberLabel': false,
     'wrapAround': true
 })
-
-alert("hola")
