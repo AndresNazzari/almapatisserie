@@ -26,7 +26,6 @@ var listaProductosDeJson //variable para almacenar el array con todos los objeto
 ***************************************************************/
 
 function getTarjetas() { //TRAE EL JSON CON LA INFO DE LAS TARJETAS Y LLAMA A LA FUNCION QUE LAS IMPRIME EN EL HTML
-
     //fetch(`${serverURL}${mockImgTiendaPath}`).then((res) => res.json()).then((data) => printTarjetas(data));
     $.getJSON(`${serverURL}${mockImgTiendaPath}`, function (data, estado) {
         if (estado == "success") {
@@ -35,7 +34,6 @@ function getTarjetas() { //TRAE EL JSON CON LA INFO DE LAS TARJETAS Y LLAMA A LA
             alert("No se puedo acceder a la informacion")
             window.location.href = "https://wwww.almapatisserie.com.ar"
         }
-
     })
 }
 
