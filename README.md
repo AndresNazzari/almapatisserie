@@ -8,7 +8,3 @@ Este es el repositorio del proyecto realizado para el curso de **Desarrollo Web 
 GitHub Pages: [GitHub Pages](https://andresnazzari.github.io/almapatisserie/)
 Netlify: [Link Netlify](https://almapatisserie.netlify.app/)
 
-
-## Acknowledgments
-
-- [Valtech]()
